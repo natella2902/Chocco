@@ -1,0 +1,36 @@
+.advantages__list {
+    width: 50%;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+  
+    
+}
+
+.advantages__item {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    
+
+    &:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 50px;
+        background: url('../../pictures/spritesheet.png') no-repeat; 
+     
+    }
+
+    &__first:before {
+        background-position: -421px -30px;
+    }
+
+    &__second:before {
+        background-position: -525px -30px;
+    }
+
+    &__third:before {
+        background-position: -635px -30px;
+    }
+}

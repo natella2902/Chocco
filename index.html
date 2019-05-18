@@ -5,125 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
     <div class="wrapper">
-       <section class="section hero">
-           <div class="container">
-               <header class="header__top">
-                    <a class="logo">
-                        <img class="logo-pic" src="../pictures/CHO_CCO.png" alt="CHO_CCO">
-                    </a>
-                    <nav class="nav">
-                       <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">О нас</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Батончики</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Команда</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Меню</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Отзывы</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Как мы работаем</a>
-                            </li>
-                           <li class="nav__item">
-                                <a href="#" class="nav__link">Контакты</a>
-                            </li>
+        <div class="maincontent">
+            <section class="section hero">
+                <div class="container">
+                    <header class="header__top">
+                        <div class="logo header__logo">
+                            <img class="logo-pic" src="../pictures/CHO_CCO.png" alt="CHO_CCO">
+                        </div>
+                        <nav class="nav header__nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">О нас</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Батончики</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Команда</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Меню</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Отзывы</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Как мы работаем</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                            <div class="contacts header__contacts">
+                                <a href="tel:+78009039090" class="contacts__phone">
+                                    8 800 903 90 90
+                                </a> 
+                            </div>
+                    </header>
+                    <div class="hero__content">
+                        <h1 class="title hero__title">натуральные шоколадные батончики</h1>
+                        <p class="hero__text">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
+                        <a href="#" class="btn hero__btn">Заказать</a>
+                        <ul class="advantages__list">
+                            <li class="advantages__item advantages__item__first"> 100% натуральный продукт </li>
+                            <li class="advantages__item advantages__item__second"> 3-5 дней доставка по РФ  </li>
+                            <li class="advantages__item advantages__item__third"> Не портит фигуру         </li>
                         </ul>
-                    </nav>
-                    <a href="tel:+78009039090" class="contacts__phone">
-                        8 800 903 90 90
-                    </a> 
-                </header>
-                <div class="hero__content">
-                    <h1 class="title">натуральные шоколадные батончики</h1>
-                    <p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-                    <a href="#" class="btn">Заказать</a>
+                    </div>
                 </div>
-                <ul class="advantages__list">
-                    <li class="advantages__item"> 100% натуральный продукт </li>
-                    <li class="advantages__item"> 3-5 дней доставка по РФ  </li>
-                    <li class="advantages__item"> Не портит фигуру         </li>
-                </ul>
-            </div>
-        </section>
-        <section class="section about">
-            <div class="container">
-                <div class="about__desc">
-                    <h2 class="title"> почему chocco?</h2>
-                    <p>В нашем мире все происходит быстро, поэтому мы делаем батончики, которые удобно взять с собой.</p>
+            </section>
+            <section class="section about">
+                <div class="container">
+                    <div class="about__desc">
+                        <h2 class="title about__title"> почему chocco?</h2>
+                        <p class="about__desc-text"> В нашем мире все происходит быстро, поэтому мы <br> делаем батончики, которые удобно взять с собой.</p>
+                    </div>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <div class="about__icon about__icon__first">
+                              
+                            </div>
+                            <div class="about__text">
+                                <h3 class="about__text-title">Полезно</h3>
+                                <p class="about__p">Натуральность ключевое качество нашей продукции. Мы используем только природные ингридиенты.</p>
+                            </div> 
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon about__icon__second">
+                         
+                            </div>
+                            <div class="about__text">
+                                <h3 class="about__text-title">Вкусно</h3>
+                                <p class="about__p"> Нежный, ненавязчивый, изысканный - так клиенты описывают вкусовые качества наших батончиков.</p>
+                            </div> 
+                            
+                        </li>
+                        <li class="about__item">
+                            <div class="about__icon about__icon__third">
+                           
+                            </div>
+                            <div class="about__text">
+                                <h3 class="about__text-title">Питательно</h3>
+                                <p class="about__p">Высокое содержание качественного белка, а так же всех необходимых витаминов и минералов</p>
+                            </div> 
+                        </li>
+                    </ul>        
                 </div>
-                <ul class="about__list">
-                    <li class="about__item">
-                        <div class="about__icon">
-                            <img src="" alt="" class="about__icon-pic">
+            </section>
+            <section class="section feedback">
+                <div class="container">
+                    <h2 class="title feedback__title">отзывы</h2>
+                    <div class="feedback__desc">
+                        <div class="feedback__img">
+                            <img src="./pictures/feedback_1.jpg" alt="девушка" class="feedback__img-pic">
                         </div>
-                        <div class="about__text">
-                            <h3 class="about__title">Полезно</h3>
-                            <p>Натуральность ключевое слово нашей продукции. Мы используем только природные ингридиенты.</p>
-                        </div> 
-                    </li>
-                    <li class="about__item">
-                        <div class="about__icon">
-                            <img src="" alt="" class="about__icon-pic">
+                        <div class="feedback__text">
+                            <h3 class="feedback__def">Лучший перекус</h3>
+                            <p class="feedback__def-text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу
+                                за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик - 
+                                он всегда под рукой. Это приятно и удобно. 
+                            </p>
+                            <div class="feedback__author">Алёна Хмельницкая</div>
                         </div>
-                        <div class="about__text">
-                            <h3 class="about__title">Вкусно</h3>
-                            <p>Нежный, ненавязчивый, изысканный - так клиенты описывают вкусовые качества наших батончиков.</p>
-                        </div> 
-                        
-                    </li>
-                    <li class="about__item">
-                        <div class="about__icon">
-                            <img src="" alt="" class="about__icon-pic">
-                        </div>
-                        <div class="about__text">
-                            <h3 class="about__title">Питательно</h3>
-                            <p>Высокое содержание качественного белка, а так же всех необходимых витаминов и минералов</p>
-                        </div> 
-                    </li>
-                </ul>        
-            </div>
-        </section>
-        <section class="section feedback">
-            <div class="container">
-               <h2 class="title">отзывы</h2>
-               <div class="feedback__desc">
-                   <div class="feedback__img">
-                       <img src="" alt="" class="feedback__img-pic">
-                   </div>
-                   <div class="feedback__text">
-                       <h3 class="feedback__title">Лучший перекус</h3>
-                       <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу
-                           за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик - 
-                           он всегда под рукой. Это приятно и удобно. 
-                       </p>
-                       <div class="feedback__author">Алёна Хмельницкая</p>
-                   </div>
-               </div> 
-               <ul class="feedback__list">
-                   <li class="feedback__item">
-                       <img src="" alt="" class="feedback__item-img">
-                   </li>
-                   <li class="feedback__item">
-                        <img src="" alt="" class="feedback__item-img">
-                   </li>
-                   <li class="feedback__item">
-                        <img src="" alt="" class="feedback__item-img">
-                   </li>
-               </ul>
-            </div>
-        </section>
-    
+                    </div> 
+                    <ul class="feedback__list">
+                        <li class="feedback__item">
+                            <a href="#" class="feedback__link">
+                                <img src="./pictures/feedback_1.jpg" alt="девушка" class="feedback__item-img">
+                            </a>
+                        </li>
+                        <li class="feedback__item">
+                            <a href="#" class="feedback__link">
+                                <img src="./pictures/feedback2.jpg" alt="рыжая девушка" class="feedback__item-img">
+                            </a>
+                        </li>
+                        <li class="feedback__item">
+                            <a href="#" class="feedback__link">
+                                <img src="./pictures/feedback3.jpg" alt="парень" class="feedback__item-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>     
     </div>
 </body>
 </html> 

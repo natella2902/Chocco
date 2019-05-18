@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800&display=swap&subset=cyrillic');
+
 @import './base/normalize.scss';
-@import './base/layout.scss';
 @import './base/variables.scss';
+@import './base/layout.scss';
+@import './base/stylesheet.scss';
+
 
 @import './blocks/hero.scss';
 @import './blocks/header.scss';
-@import './blocks/nav.scss;
+@import './blocks/nav.scss';
+@import './blocks/advantages.scss';
+@import './blocks/btn.scss';
+@import './blocks/about.scss';
+@import './blocks/feedback.scss';
+
 
