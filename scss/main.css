@@ -490,7 +490,7 @@ footer {
     display: block;
     width: 100px;
     height: 50px;
-    background: url("../../pictures/spritesheet.png") no-repeat; }
+    background: url("../pictures/spritesheet.png") no-repeat; }
   .advantages__item__first:before {
     background-position: -421px -30px; }
   .advantages__item__second:before {
@@ -554,7 +554,7 @@ footer {
   justify-content: center;
   align-items: center;
   background: no-repeat #f2f5f4 center center;
-  background-image: url(../../pictures/spritesheet.png);
+  background-image: url(../pictures/spritesheet.png);
   margin-bottom: 30px; }
   .about__icon__first {
     background-position: -0px -5px; }
