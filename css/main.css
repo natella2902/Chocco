@@ -759,3 +759,211 @@ footer {
 
 .acco__btn--img3 {
   background-image: url("../../pictures/acco3.png"); }
+
+.form {
+  background-image: url("../../pictures/form_img.png");
+  background-size: cover; }
+
+.form__container {
+  width: 767px;
+  margin: 0 auto;
+  background: yellow;
+  color: black;
+  padding: 30px 100px;
+  flex-direction: column; }
+
+.form-title {
+  font-size: 49px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.form__row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.form__block {
+  margin-right: 23px;
+  flex: 1; }
+
+.form__block:last-child {
+  margin-right: 0; }
+
+.form__block-title {
+  color: #221f1f;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px; }
+
+.form-field {
+  width: 100%;
+  background: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px; }
+
+.form-field::placeholder {
+  color: 221f1f;
+  padding-left: 10px; }
+
+.form__textarea {
+  resize: none;
+  min-width: 100px;
+  min-height: 90px;
+  overflow: hidden; }
+
+.form-field:focus {
+  border: 2px solid #ec1e79; }
+
+.form__foto {
+  width: 100%;
+  margin-bottom: 15px; }
+
+.form__radio {
+  display: none; }
+
+.form__radio-lbl {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px; }
+
+.form__radio-lbl:last-child {
+  margin-right: 0; }
+
+.form__radio-custom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ec1e79;
+  position: relative; }
+
+.form__radio-custom:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ec1e79;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0; }
+
+.form__radio:checked + .form__radio-custom:after {
+  opacity: 1; }
+
+.form__button {
+  border-radius: 2px;
+  background: #27273e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  padding: 10px 20px;
+  transition: 1s;
+  cursor: pointer;
+  transition: 1s; }
+
+.form__button:hover {
+  background: #ec1e79; }
+
+.map {
+  background-size: cover;
+  background-image: url("../../pictures/карта.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  color: #000;
+  font-weight: 400;
+  font-size: 21px; }
+
+.footer__container {
+  flex-direction: row; }
+
+.footer__left {
+  width: 50%;
+  padding: 25px; }
+
+.footer__right {
+  width: 50%;
+  background: red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.socials {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.socials__title {
+  font-family: 'gothampro', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 54px;
+  margin-bottom: -10px; }
+
+.socials__list {
+  display: flex; }
+
+.socials__item {
+  justify-content: space-between;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  background: white no-repeat center;
+  margin-right: 10px;
+  background-image: url("../../pictures/spritesheet2.png");
+  transition: 1s; }
+
+.socials__item--vk {
+  background-position: -170px 4px; }
+
+.socials__item--fb {
+  background-position: -189px 1px; }
+
+.socials__item--g {
+  background-position: -210px 3px; }
+
+.socials__item--tw {
+  background-position: -255px 3px; }
+
+.socials__item--mail {
+  background-position: -233px 3px; }
+
+.socials__item:hover {
+  background: #ec1e79 no-repeat center;
+  background-image: url("../../pictures/spritesheet2.png"); }
+
+.socials__item--vk:hover {
+  background-position: -170px 4px; }
+
+.socials__item--fb:hover {
+  background-position: -189px 1px; }
+
+.socials__item--g:hover {
+  background-position: -210px 3px; }
+
+.socials__item--tw:hover {
+  background-position: -255px 3px; }
+
+.socials__item--mail:hover {
+  background-position: -233px 3px; }
