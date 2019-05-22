@@ -1,22 +1,14 @@
-.form {
-    background-image: url('../../pictures/form_img.png');
-    background-size: cover;
+.form__tag {
+   display: flex;
+   margin: 0 auto;
+  
 }
 
-.form__container {
-    width: 767px;
-    margin: 0 auto;
-    background: yellow;
-    color: black;
-    padding: 30px 100px;
-    flex-direction: column;
-}   
-
-.form-title {
-    font-size: 49px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.form__part {
+    width: 50%;
+    margin-right: 3%;
 }
+
 
 .form__row {
     margin-bottom: 10px;
@@ -24,6 +16,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    color: $colorGreen;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .form__block {
@@ -36,9 +32,6 @@
 }
 
 .form__block-title {
-    color: #221f1f;
-    font-size: 14px;
-    font-weight: 300;
     margin-bottom: 10px; 
 }
 
@@ -46,8 +39,6 @@
     width: 100%;
     background: #fff;
     border: none;
-    font-size: 14px;
-    font-weight: 300;
     padding: 10px;
 }
 
@@ -64,10 +55,10 @@
 }
 
 .form-field:focus {
-    border: 2px solid #ec1e79;
+    border: 2px solid $colorGreen;
 }
 
-.form__foto {
+.form__get-change {
     width: 100%;
     margin-bottom: 15px;
 }
@@ -91,7 +82,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 2px solid #ec1e79;
+    border: 2px solid $colorGreen;
     position: relative;
 }
   
@@ -100,7 +91,7 @@
     display: block;
     width: 8px;
     height: 8px;
-    background-color: #ec1e79;
+    background-color: $colorGreen;
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -115,24 +106,14 @@
     opacity: 1;
 }
 
-.form__button {
-    border-radius: 2px;
-    background: #27273e;
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2.4px;
-    padding: 10px 20px;
-   
-    transition: 1s;    
-    cursor: pointer;
-    transition: 1s;
-  
-  
+.form__btn {
+    background-color: $colorGreen;
+    color: white;
 }
 
-.form__button:hover {
-    background: #ec1e79;
+.reset {
+    border: none;
+    background-color: transparent;
+    color: $colorGreen;
 }
+

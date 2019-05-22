@@ -243,51 +243,86 @@
                     </ul> 
                 </div>    
             </section>
-            <section class="section form">
-                <div class="container form__container"> 
-                <h2 class="form-title">Закажите доставку</h2>
-                
-                <form action="url" class="form__tag">                
-                    <div class="form__row">
-                        <label class="form__block">
-                            <div class="form__block-title">Ваше имя</div>
-                            <input type="text" placeholder="Андрей" class="form__input form-field">
-                        </label>
-                        <label class="form__block">
-                            <div class="form__block-title">Ссылка на профиль в VK</div>
-                            <input type="text" placeholder="vk.com/example" class="form__input form-field">
-                        </label>
-                    </div>
-                    <div class="form__row">
-                        <label class="form__block">
-                            <div class="form__block-title">Текст отзыва</div>
-                            <textarea name="form__textarea" class="form__textarea form-field" placeholder="Мне понравилось"></textarea>
-                        </label>
-                    </div> 
-                    <div class="form__row">
-                    <div class="form__foto">
-                        <div class="form__block-title">Отображать фото в отзыве?</div>
-                        <label class="form__radio-lbl" tabindex="0">        
-                            <input class="form__radio" value="Yes" type="radio" name="foto" checked>
-                            <span class="form__radio-custom"></span>
-                            <span class="form__radio-text" >Да</span>
-                        </label>  
-                        <label class="form__radio-lbl" tabindex="0">
-                            <input class="form__radio" value="No" type="radio" name="foto">
-                            <span class="form__radio-custom"> </span>
-                            <span class="form__radio-text">Нет</span>
-                        </label>
-                        
-                    </div>
-                        
-                    <div class="form__buttons">
-                            <button type="submit" class="form__button">Отправить</button>
-                    </div>  
+            <section class="section delivery">
+                <div class="container delivery__container"> 
+                    <h2 class="title delivery__title">Закажите доставку</h2>
+                    <form action="url" class="form__tag"> 
+                        <div class="form__part">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Имя</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Телефон</div>
+                                    <input type="text" placeholder="89022348912" class="form__input form-field">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Улица</div>
+                                    <input type="text" class="form__input form-field">
+                                </label>
+                            </div>             
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Дом</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Корпус</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Квартира</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Этаж</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                            </div>
+                        </div>            
+                        <div class="form__part">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Комментарий</div>
+                                    <textarea name="form__textarea" class="form__textarea form-field" placeholder="Мне понравилось"></textarea>
+                                </label>
+                            </div> 
+                            <div class="form__row">
+                                <div class="form__get-change">
+                                    <label class="form__radio-lbl" tabindex="0">        
+                                        <input class="form__radio" value="Yes" type="radio" name="get-change">
+                                        <span class="form__radio-custom"></span>
+                                        <span class="form__radio-text" >Потребуется сдача</span>
+                                    </label>  
+                                    <label class="form__radio-lbl" tabindex="0">
+                                        <input class="form__radio" value="No" type="radio" name="get-change" checked>
+                                        <span class="form__radio-custom"> </span>
+                                        <span class="form__radio-text">Оплата по карте</span>
+                                    </label>    
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <label for="no-call" class="form__checkbox" >
+                                    <input class="form__checkbox-input" id="no-call" type="checkbox" name="call" checked>
+                                    <span class="form__checkbox-custom"> </span>
+                                    <span class="form__checkbox-text">Не презванивать</span>
+                                </label>
+                            </div>   
+                                
+                            <div class="form__row"> 
+                                <div class="form__buttons">
+                                    <button type="submit" class="btn form__btn">Отправить</button>
+                                </div>  
+                                <div class="form__buttons">
+                                    <button type="reset" class="reset">Очистить</button>
+                                </div> 
+                            </div>        
+                        </div>       
+                    </form>
                 </div>
-
-                        
-                </form>
-            </div>
             </section>
 
             <section class="section map">
