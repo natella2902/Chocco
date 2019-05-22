@@ -1,0 +1,58 @@
+.acco__wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.acco__list {
+    display: flex;
+  
+} 
+
+.acco__item {
+    display: flex;
+
+}
+
+.acco__title {
+    color: $colorWhite;
+    writing-mode: vertical-lr;
+    transform:rotate(180deg);
+    
+    font-size: 48px;
+    font-weight: 500;
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 40px;
+}
+
+.acco__desc {
+    display: none;
+    max-width: 50%;
+}
+
+.acco__btn {
+    width: 100px;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $colorBlack;
+    border: none;
+}
+
+.acco__btn--img1 {
+    background-image: url('../../pictures/acco1.png');
+}
+
+.acco__btn--img2 {
+    background-image: url('../../pictures/acco2.png');
+}
+
+.acco__btn--img3 {
+    background-image: url('../../pictures/acco3.png');
+}

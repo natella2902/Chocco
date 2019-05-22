@@ -2,22 +2,80 @@
     color: $colorBlack;
 }
 
+.team__title {
+    padding-bottom: 70px;
+}
+
 .team__list {
     display: flex;
     justify-content: space-between;
+
 }
 
 .team__desc {
     text-align: center;
 }
 
-.team__title {
+.team__img {
+    padding-bottom: 25px;
+}
+
+.team__author {
+   
+   
+}
+
+.team__subtitle {
     font-size: 21px;
     font-weight: 500;
+
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url('../../pictures/клювик_вниз.png');
+        background-repeat:  no-repeat;
+        background-position: center center;
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 20px;
+    }
+         
+
 }
 
 .team__text {
     font-size: 18px;
+    height: 0;
+    overflow: hidden;
+}
+
+
+
+.team__author--active  {
+    + .team__text {
+        height: 100%;
+    }
+
+    .team__subtitle:after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url('../../pictures/клювик__вверх.png');
+        background-repeat:  no-repeat;
+        background-position: center center;
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 20px;
+    }
+       
+    
 }
 
 .team__spec {
@@ -32,10 +90,14 @@
 }
 
 .team__item {
-    width: 24%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &:nth-child(2n) {
+        padding-top: 60px;
+    }
 }
 
 .team__img {
@@ -48,3 +110,5 @@
     height: 100%;
     display: block;
 }
+
+
