@@ -3,7 +3,7 @@
 }
 
 .team__title {
-    padding-bottom: 70px;
+    padding-bottom: rem(70px);
 }
 
 .team__list {
@@ -17,7 +17,7 @@
 }
 
 .team__img {
-    padding-bottom: 25px;
+    padding-bottom: rem(25px);
 }
 
 .team__author {
@@ -26,7 +26,7 @@
 }
 
 .team__subtitle {
-    font-size: 21px;
+    font-size: rem(21px);
     font-weight: 500;
 
     margin-left: 0;
@@ -35,22 +35,22 @@
 
     &:after {
         content: "";
-        width: 15px;
-        height: 15px;
+        width: rem(15px);
+        height: rem(15px);
         background-image: url('../../pictures/клювик_вниз.png');
         background-repeat:  no-repeat;
         background-position: center center;
         display: block;
         position: absolute;
-        top: 2px;
-        right: 20px;
+        top: rem(2px);
+        right: rem(20px);
     }
          
 
 }
 
 .team__text {
-    font-size: 18px;
+    font-size: rem(18px);
     height: 0;
     overflow: hidden;
 }
@@ -64,15 +64,15 @@
 
     .team__subtitle:after {
         content: "";
-        width: 15px;
-        height: 15px;
+        width: rem(15px);
+        height: rem(15px);
         background-image: url('../../pictures/клювик__вверх.png');
         background-repeat:  no-repeat;
         background-position: center center;
         display: block;
         position: absolute;
-        top: 2px;
-        right: 20px;
+        top: rem(2px);
+        right: rem(20px);
     }
        
     
@@ -96,13 +96,13 @@
     align-items: center;
 
     &:nth-child(2n) {
-        padding-top: 60px;
+        padding-top: rem(60px);
     }
 }
 
 .team__img {
-    width: 225px;
-    height: 290px;
+    width: rem(225px);
+    height: rem(290px);
 }
 
 .team__img-pic {

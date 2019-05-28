@@ -312,12 +312,9 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  /*max-width: 940px + 20px; */
   min-height: 100%;
   overflow: hidden; }
-
-html {
-  font-size: 14px; }
 
 body {
   margin: 0;
@@ -326,9 +323,10 @@ body {
   color: #fff;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 1rem;
-  line-height: 1;
+  line-height: 1.42;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; }
 
 * {
   box-sizing: border-box; }
@@ -366,7 +364,7 @@ table {
   border-spacing: 0; }
 
 .title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -374,7 +372,7 @@ table {
 
 .section {
   height: 100vh;
-  min-height: 650px; }
+  min-height: 40.625rem; }
 
 .container {
   /*  max-width: 940px; */
@@ -383,7 +381,8 @@ table {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
 
 footer {
   position: relative;
@@ -442,32 +441,32 @@ footer {
   flex-direction: column; }
 
 .hero__title {
-  font-size: 60px;
+  font-size: 3.75rem;
   text-align: start;
-  margin-bottom: 15px; }
+  margin-bottom: 0.9375rem; }
 
 .hero__text {
   width: 80%;
-  font-size: 21px;
-  margin-bottom: 30px; }
+  font-size: 1.3125rem;
+  margin-bottom: 1.875rem; }
 
 .hero__btn {
-  margin-bottom: 70px;
+  margin-bottom: 4.375rem;
   width: 33%; }
 
 .header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 90px; }
+  margin-top: 1.25rem;
+  margin-bottom: 5.625rem; }
 
 .header__contacts {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400; }
 
 .nav__item {
-  margin-left: 25px; }
+  margin-left: 1.5625rem; }
   .nav__item:last-child {
     margin-right: 0; }
 
@@ -476,13 +475,13 @@ footer {
   align-items: center; }
 
 .nav__link {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: normal; }
 
 .advantages__list {
   width: 50%;
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400; }
 
 .advantages__item {
@@ -492,8 +491,8 @@ footer {
   .advantages__item:before {
     content: "";
     display: block;
-    width: 100px;
-    height: 50px;
+    width: 6.25rem;
+    height: 3.125rem;
     background: url("../pictures/spritesheet.png") no-repeat; }
   .advantages__item__first:before {
     background-position: -421px -30px; }
@@ -504,10 +503,10 @@ footer {
 
 .btn {
   background-color: #ffffff;
-  border-radius: 30px;
-  padding: 20px 40px;
+  border-radius: 1.875rem;
+  padding: 1.25rem 2.5rem;
   color: #0f5a47;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-weight: 800;
   text-transform: uppercase; }
 
@@ -523,19 +522,19 @@ footer {
 .about__title {
   color: #000;
   font-weight: 700;
-  margin-bottom: 15px; }
+  margin-bottom: 0.9375rem; }
 
 .about__text {
   text-align: center; }
 
 .about__text-title {
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 700; }
 
 .about__desc-text {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
-  margin-bottom: 60px; }
+  margin-bottom: 3.75rem; }
 
 .about__list {
   display: flex;
@@ -550,15 +549,15 @@ footer {
 
 .about__icon {
   border-radius: 50%;
-  width: 125px;
-  height: 125px;
+  width: 7.8125rem;
+  height: 7.8125rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background: no-repeat #f2f5f4 center center;
   background-image: url(../pictures/spritesheet.png);
-  margin-bottom: 30px; }
+  margin-bottom: 1.875rem; }
   .about__icon__first {
     background-position: -0px -5px; }
   .about__icon__second {
@@ -567,7 +566,7 @@ footer {
     background-position: -260px 1px; }
 
 .about__p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300; }
 
 .feedback {
@@ -580,12 +579,12 @@ footer {
   display: flex;
   background-color: #f8faf9;
   padding: 6%;
-  margin-bottom: 30px; }
+  margin-bottom: 1.875rem; }
 
 .feedback__img {
-  width: 254px;
-  height: 260px;
-  margin-right: 10px; }
+  width: 15.875rem;
+  height: 16.25rem;
+  margin-right: 0.625rem; }
 
 .feedback__img-pic {
   width: 100%;
@@ -597,17 +596,17 @@ footer {
   width: 53%; }
 
 .feedback__def {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 500;
-  margin-top: 15px; }
+  margin-top: 0.9375rem; }
 
 .feedback__def-text {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  margin-bottom: 40px; }
+  margin-bottom: 2.5rem; }
 
 .feedback__author {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500; }
 
 .feedback__list {
@@ -615,11 +614,11 @@ footer {
   justify-content: center; }
 
 .feedback__item {
-  width: 94px;
-  height: 94px;
+  width: 5.875rem;
+  height: 5.875rem;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 40px; }
+  margin-right: 2.5rem; }
   .feedback__item:last-child {
     margin-right: 0; }
   .feedback__item:hover {
@@ -629,7 +628,7 @@ footer {
   color: #000; }
 
 .team__title {
-  padding-bottom: 70px; }
+  padding-bottom: 4.375rem; }
 
 .team__list {
   display: flex;
@@ -639,28 +638,28 @@ footer {
   text-align: center; }
 
 .team__img {
-  padding-bottom: 25px; }
+  padding-bottom: 1.5625rem; }
 
 .team__subtitle {
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 500;
   margin-left: 0;
   margin-right: 0;
   position: relative; }
   .team__subtitle:after {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    height: 0.9375rem;
     background-image: url("../../pictures/клювик_вниз.png");
     background-repeat: no-repeat;
     background-position: center center;
     display: block;
     position: absolute;
-    top: 2px;
-    right: 20px; }
+    top: 0.125rem;
+    right: 1.25rem; }
 
 .team__text {
-  font-size: 18px;
+  font-size: 1.125rem;
   height: 0;
   overflow: hidden; }
 
@@ -669,15 +668,15 @@ footer {
 
 .team__author--active .team__subtitle:after {
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
   background-image: url("../../pictures/клювик__вверх.png");
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
   position: absolute;
-  top: 2px;
-  right: 20px; }
+  top: 0.125rem;
+  right: 1.25rem; }
 
 .team__spec {
   font-weight: 400;
@@ -693,11 +692,11 @@ footer {
   flex-direction: column;
   align-items: center; }
   .team__item:nth-child(2n) {
-    padding-top: 60px; }
+    padding-top: 3.75rem; }
 
 .team__img {
-  width: 225px;
-  height: 290px; }
+  width: 14.0625rem;
+  height: 18.125rem; }
 
 .team__img-pic {
   width: 100%;
@@ -714,8 +713,8 @@ footer {
   display: flex; }
 
 .menu__title {
-  padding-top: 100px;
-  padding-left: 80px; }
+  padding-top: 6.25rem;
+  padding-left: 5rem; }
 
 .acco__wrapper {
   position: absolute;
@@ -733,20 +732,20 @@ footer {
   color: #fff;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: 40px; }
+  padding-top: 2.5rem; }
 
 .acco__desc {
   display: none;
   max-width: 50%; }
 
 .acco__btn {
-  width: 100px;
+  width: 6.25rem;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -771,47 +770,47 @@ footer {
   margin-right: 3%; }
 
 .form__row {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   color: #0f5a47;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400; }
 
 .form__block {
-  margin-right: 23px;
+  margin-right: 1.4375rem;
   flex: 1; }
 
 .form__block:last-child {
   margin-right: 0; }
 
 .form__block-title {
-  margin-bottom: 10px; }
+  margin-bottom: 0.625rem; }
 
 .form-field {
   width: 100%;
   background: #fff;
   border: none;
-  padding: 10px; }
+  padding: 0.625rem; }
 
 .form-field::placeholder {
   color: 221f1f;
-  padding-left: 10px; }
+  padding-left: 0.625rem; }
 
 .form__textarea {
   resize: none;
-  min-width: 100px;
-  min-height: 90px;
+  min-width: 6.25rem;
+  min-height: 5.625rem;
   overflow: hidden; }
 
 .form-field:focus {
-  border: 2px solid #0f5a47; }
+  border: 0.125rem solid #0f5a47; }
 
 .form__get-change {
   width: 100%;
-  margin-bottom: 15px; }
+  margin-bottom: 0.9375rem; }
 
 .form__radio {
   display: none; }
@@ -819,15 +818,15 @@ footer {
 .form__radio-lbl {
   display: inline-flex;
   align-items: center;
-  margin-right: 15px; }
+  margin-right: 0.9375rem; }
 
 .form__radio-lbl:last-child {
   margin-right: 0; }
 
 .form__radio-custom {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
   border: 2px solid #0f5a47;
   position: relative; }
@@ -835,8 +834,8 @@ footer {
 .form__radio-custom:after {
   content: '';
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   background-color: #0f5a47;
   border-radius: 50%;
   position: absolute;
@@ -883,14 +882,14 @@ footer {
   width: 100%;
   color: #000;
   font-weight: 400;
-  font-size: 21px; }
+  font-size: 1.3125rem; }
 
 .footer__container {
   flex-direction: row; }
 
 .footer__left {
   width: 50%;
-  padding: 25px; }
+  padding: 1.5625rem; }
 
 .footer__right {
   width: 50%;
@@ -901,17 +900,17 @@ footer {
 
 .socials {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .socials__title {
   font-family: 'gothampro', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
-  line-height: 54px;
-  margin-bottom: -10px; }
+  line-height: 3.375rem;
+  margin-bottom: -rem(10px); }
 
 .socials__list {
   display: flex; }
@@ -919,11 +918,11 @@ footer {
 .socials__item {
   justify-content: space-between;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   overflow: hidden;
   background: white no-repeat center;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   background-image: url("../../pictures/spritesheet2.png");
   transition: 1s; }
 

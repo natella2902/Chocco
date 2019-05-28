@@ -20,7 +20,7 @@
     writing-mode: vertical-lr;
     transform:rotate(180deg);
     
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 500;
     
     display: flex;
@@ -28,7 +28,7 @@
     width: 100%;
     height: 100%;
 
-    padding-top: 40px;
+    padding-top: rem(40px);
 }
 
 .acco__desc {
@@ -37,7 +37,7 @@
 }
 
 .acco__btn {
-    width: 100px;
+    width: rem(100px);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;

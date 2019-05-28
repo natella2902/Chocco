@@ -17,18 +17,18 @@
 }
 
 .hero__title {
-    font-size: 60px;
+    font-size: rem(60px);
     text-align: start;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 .hero__text {
     width: 80%;
-    font-size: 21px;
-    margin-bottom: 30px;
+    font-size: rem(21px);
+    margin-bottom: rem(30px);
 }
 
 .hero__btn {
-    margin-bottom: 70px; 
+    margin-bottom: rem(70px); 
     width: 33%;   
 }

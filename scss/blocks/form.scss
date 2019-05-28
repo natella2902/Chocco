@@ -11,19 +11,19 @@
 
 
 .form__row {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 
     color: $colorGreen;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
 }
 
 .form__block {
-    margin-right: 23px;
+    margin-right: rem(23px);
     flex: 1;
 }
 
@@ -32,35 +32,35 @@
 }
 
 .form__block-title {
-    margin-bottom: 10px; 
+    margin-bottom: rem(10px); 
 }
 
 .form-field {
     width: 100%;
     background: #fff;
     border: none;
-    padding: 10px;
+    padding: rem(10px);
 }
 
 .form-field::placeholder {
     color: 221f1f;
-    padding-left: 10px;
+    padding-left: rem(10px);
 }
 
 .form__textarea {
     resize: none;
-    min-width: 100px;
-    min-height: 90px;
+    min-width: rem(100px);
+    min-height: rem(90px);
     overflow: hidden;
 }
 
 .form-field:focus {
-    border: 2px solid $colorGreen;
+    border: rem(2px) solid $colorGreen;
 }
 
 .form__get-change {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 .form__radio {
@@ -70,7 +70,7 @@
 .form__radio-lbl {
     display: inline-flex;
     align-items: center;
-    margin-right: 15px;
+    margin-right: rem(15px);
 }
 
 .form__radio-lbl:last-child {
@@ -79,8 +79,8 @@
 
 .form__radio-custom {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     border-radius: 50%;
     border: 2px solid $colorGreen;
     position: relative;
@@ -89,8 +89,8 @@
 .form__radio-custom:after {
     content: '';
     display: block;
-    width: 8px;
-    height: 8px;
+    width: rem(8px);
+    height: rem(8px);
     background-color: $colorGreen;
     border-radius: 50%;
     position: absolute;

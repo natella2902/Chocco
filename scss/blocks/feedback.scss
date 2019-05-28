@@ -10,13 +10,13 @@
     display: flex;
     background-color: #f8faf9;
     padding: 6%;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 .feedback__img {
-    width: 254px;
-    height: 260px;
-    margin-right: 10px;
+    width: rem(254px);
+    height: rem(260px);
+    margin-right: rem(10px);
 }
 
 .feedback__img-pic {
@@ -33,19 +33,19 @@
 }
 
 .feedback__def {  
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: rem(15px);
 }
 
 .feedback__def-text {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 }
 
 .feedback__author {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 500;
 }
 
@@ -56,11 +56,11 @@
 
 
 .feedback__item {
-    width: 94px;
-    height: 94px;
+    width: rem(94px);
+    height: rem(94px);
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 40px;
+    margin-right: rem(40px);
    
     &:last-child {
         margin-right: 0;
