@@ -1,12 +1,22 @@
 .form__tag {
    display: flex;
    margin: 0 auto;
+
+   @include tablets {
+       flex-direction: column;
+       align-items: center;
+       text-align: start;
+   }
   
 }
 
 .form__part {
     width: 50%;
     margin-right: 3%;
+        @include tablets {
+            width: 100%;
+            margin: 0 3%;
+        }
 }
 
 
@@ -61,6 +71,8 @@
 .form__get-change {
     width: 100%;
     margin-bottom: rem(15px);
+    display: flex;
+   
 }
 
 .form__radio {
@@ -109,6 +121,13 @@
 .form__btn {
     background-color: $colorGreen;
     color: white;
+    
+}
+
+.form__adapt {
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .reset {

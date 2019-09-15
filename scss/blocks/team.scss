@@ -1,6 +1,12 @@
 .team {
     color: $colorBlack;
+    
+    @include tablets {
+        height: 100%;
+        padding: 0 15%;
+    }
 }
+
 
 .team__title {
     padding-bottom: rem(70px);
@@ -9,6 +15,11 @@
 .team__list {
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-wrap: wrap;
+       
+    }
 
 }
 
@@ -97,6 +108,14 @@
 
     &:nth-child(2n) {
         padding-top: rem(60px);
+    }
+
+    @include tablets {
+        width: 50%;
+        &:nth-child(2n) {
+            padding-top: 0;
+        }
+       
     }
 }
 

@@ -3,7 +3,16 @@
     display: flex;
     font-size: rem(16px);
     font-weight: 400;
-  
+
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+
+    @include tablets {
+        bottom: 1%;
+    }
+    
     
 }
 

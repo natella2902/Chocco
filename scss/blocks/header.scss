@@ -4,10 +4,22 @@
     justify-content: space-between;
     margin-top: rem(20px);
     margin-bottom: rem(90px);
+
+    @include tablets {
+        margin-bottom: 0;
+    }
  
 }
 
 .header__contacts {
     font-size: rem(24px);
     font-weight: 400;
+
+   
+}
+
+.contacts__phone {
+    @include tablets {
+        display: none;
+    }
 }

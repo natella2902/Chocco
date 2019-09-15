@@ -1,6 +1,12 @@
 .feedback {
     color: $colorGrayLight;
+    
+    @include tablets {
+        height: 100%;
+        padding: 0 15%;
+    }
 }
+
 
 .feedback__title {
     color: $colorBlack;
@@ -11,6 +17,11 @@
     background-color: #f8faf9;
     padding: 6%;
     margin-bottom: rem(30px);
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .feedback__img {
@@ -30,6 +41,10 @@
 .feedback__text {
     color: $colorGrayDark;
     width: 53%;
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .feedback__def {  

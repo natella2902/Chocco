@@ -18,6 +18,10 @@
         font-weight: normal;
 
     }
+
+    @include tablets {
+        display: none;
+    }
 }
 
 

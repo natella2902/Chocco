@@ -9,7 +9,7 @@
 }
 
 
-@mixin phone {
+@mixin phones {
     @media screen and (max-width: $phones) {
         @content;
     }

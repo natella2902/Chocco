@@ -22,38 +22,40 @@
 }
 
 .socials__item {
-    justify-content: space-between;
-    border-radius: 50%;
-    width: rem(25px);    
-    height: rem(25px);
-    overflow: hidden;
-    background: white no-repeat center;
+    justify-content: space-around;
+    background: red no-repeat center;
     margin-right: rem(10px);
-    background-image: url('../../pictures/spritesheet2.png');
+
+
+    width: rem(23px);
+    height: rem(23px);   
     transition: 1s;
-    
-    
-} 
+}
+  
+
 
 .socials__item--vk {
-    background-position: -170px 4px;
+    background-image: url('/svg/vk.svg');
+
 }
+
 
 .socials__item--fb {
-    background-position: -189px 1px;
+    background-image: url('/svg/fb_hover.svg');
+
 }
 
-.socials__item--g {
-    background-position: -210px 3px;
-}
 
 .socials__item--tw {
-    background-position: -255px 3px;
+    background-image: url('/svg/twitter.svg');
 }
 
-.socials__item--mail {
-    background-position: -233px 3px;
+
+.socials__item--inst {
+    background-image: url('/svg/inst.svg');
 }
+
+/*
 
 .socials__item:hover {
     background: #ec1e79 no-repeat center;
@@ -79,3 +81,4 @@
     background-position: -233px 3px;
 }
 
+*/

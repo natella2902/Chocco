@@ -12,13 +12,16 @@ $phones: 480px;
 @import './base/layout.scss';
 @import './base/stylesheet.scss';
 
+@import './blocks/nav-rt.scss';
 
 @import './blocks/hero.scss';
 @import './blocks/header.scss';
 @import './blocks/nav.scss';
+@import './blocks/hamburger-menu.scss';
 @import './blocks/advantages.scss';
 @import './blocks/btn.scss';
 @import './blocks/about.scss';
+@import './blocks/slider.scss';
 @import './blocks/feedback.scss';
 @import './blocks/team.scss';
 @import './blocks/menu.scss';
