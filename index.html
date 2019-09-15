@@ -10,6 +10,35 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
+            <ul class="nav-rt__list">
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link nav-rt__link--active"></a>
+                </li>
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link"></a>
+                </li>
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link"></a>
+                </li>
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link"></a>
+                </li>
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link"></a>
+                </li>
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link"></a>
+                </li>
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link"></a>
+                </li>
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link"></a>
+                </li>
+                <li class="nav-rt__item">
+                    <a href="#" class="nav-rt__link"></a>
+                </li>
+            </ul>
             <section class="section hero">
                 <div class="container hero__container">
                     <header class="header__top">
@@ -45,12 +74,21 @@
                             <a href="tel:+78009039090" class="contacts__phone">
                                 8 800 903 90 90
                             </a> 
+                            <a class="hamburger-menu-link" href="#">
+                                <div class="hamburger-menu-link__bars"></div>
+                            </a>
                         </div>
+                    
                     </header>
                     <div class="hero__content">
-                        <h1 class="title hero__title">натуральные шоколадные батончики</h1>
-                        <p class="hero__text">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-                        <a href="#" class="btn hero__btn">Заказать</a>
+                        <div class="hero__content-lft">
+                            <h1 class="title hero__title">натуральные шоколадные батончики</h1>
+                            <p class="hero__text">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
+                            <a href="#" class="btn hero__btn">Заказать</a>
+                        </div>
+                        <div class="hero__content-rt">
+                            <img src="./pictures/hero-pic.png" alt="батончики" class="hero-pic">
+                        </div>
                        
                     </div>
                     <ul class="advantages__list">
@@ -98,6 +136,78 @@
                     </ul>        
                 </div>
             </section>
+            <section class="section product">
+                <div class="container product__container">
+                    <a class="arrow arrow__left" id="left"></a>
+                    <ul class="slider__list" id="item">
+                        <li class="slider__item">
+                            <div class="slider slider__wrapper">  
+                                <div class="slider-lft"> 
+                                    <div class="slider-bg"> </div> 
+                                    <div class="slider-img">
+                                        <img src="/pictures/slider__img1.png" alt="Батончик" class="slider__pic">
+                                    </div>                        
+                                </div>
+                                <div class="slider-rt">
+                                    <h2 class="title slider__title">Батончик "Морские водоросли"</h2>
+                                    <span class="slider__par">Состав:</span>
+                                    <p class="slider__text">Гранола из морских водорослей с овсом, 
+                                        миндалем и тыквенными семечками. 
+                                        В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                                    </p>
+                                    <div class="slider__desc">
+                                        <div class="slider__kk">
+                                            <span class="slider__kk-key">Калорийность</span>
+                                            <span class="slider__kk-value">120 ккал</span>
+                                        </div>
+                                        <div class="slider__weight">
+                                            <span class="slider__weight-key">Вес</span>
+                                            <span class="slider__weight-value">98 грамм</span>
+                                        </div>       
+                                    </div>
+                                    <div class="slider__footer">
+                                        <span class="slider__desc--price">140 ₽</span>
+                                        <a href="#" class="btn slider__btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider__item">
+                            <div class="slider slider__wrapper">
+                                <div class="slider-lft"> 
+                                    <div class="slider-bg"> </div> 
+                                    <div class="slider-img">
+                                        <img src="/pictures/whitechocco.png" alt="Батончик" class="slider__pic">
+                                    </div>                        
+                                </div>
+                                <div class="slider-rt">
+                                    <h2 class="title slider__title">Батончик "Морские водоросли"</h2>
+                                    <span class="slider__par">Состав:</span>
+                                    <p class="slider__text">Гранола из морских водорослей с овсом, 
+                                        миндалем и тыквенными семечками. 
+                                        В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                                    </p>
+                                    <div class="slider__desc">
+                                        <div class="slider__kk">
+                                            <span class="slider__kk-key">Калорийность</span>
+                                            <span class="slider__kk-value">120 ккал</span>
+                                        </div>
+                                        <div class="slider__weight">
+                                            <span class="slider__weight-key">Вес</span>
+                                            <span class="slider__weight-value">98 грамм</span>
+                                        </div>       
+                                    </div>
+                                    <div class="slider__footer">
+                                        <span class="slider__desc--price">150 ₽</span>
+                                        <a href="#" class="btn slider__btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>        
+                        </li>
+                    </ul>
+                    <a class="arrow arrow__right" id="right"></a>   
+                </div>     
+            </section>
             <section class="section feedback">
                 <div class="container">
                     <h2 class="title feedback__title">отзывы</h2>
@@ -135,7 +245,7 @@
             </section>
             <section class="section team">
                 <div class="container">
-                    <h2 class="title"> команда </h2>
+                    <h2 class="title team__title"> команда </h2>
                     <ul class="team__list">
                         <li class="team__item">
                             <div class="team__img">
@@ -143,26 +253,26 @@
                             </div>
                             <div class="team__desc">
                                 <div class="team__author">
-                                    <h3 class="team__title">Борис Федорович </h3>
+                                    <h3 class="team__subtitle">Борис Федорович </h3>
                                 </div>
                                 <div class="team__text">
-                                    <h3 class="team__spec">  </h3> 
-                                    <p class="team__spec-desc"></p>  
+                                    <h3 class="team__spec"> Оператор </h3> 
+                                    <p class="team__spec-desc">С радостью поможет подобрать батончики и оформить заказ</p>  
                                 </div>
                             </div>
                         </li>
-                        <li class="team__item">
+                        <li class="team__item ">
                             <div class="team__img">
                                 <img src="./pictures/team2.png" alt="" class="team__img-pic">
                             </div>
 
                             <div class="team__desc">
                                 <div class="team__author">
-                                    <h3 class="team__title">Алла Ивановна</h3>
+                                    <h3 class="team__subtitle">Алла Ивановна</h3>
                                 </div>
                                 <div class="team__text">
-                                    <h3 class="team__spec">  </h3> 
-                                    <p class="team__spec-desc"></p>  
+                                    <h3 class="team__spec">Оператор  </h3> 
+                                    <p class="team__spec-desc">С радостью поможет подобрать батончики и оформить заказ</p>  
                                 </div>
                             </div>
                         </li>
@@ -172,8 +282,8 @@
                             </div>
 
                             <div class="team__desc">
-                                <div class="team__author">
-                                    <h3 class="team__title">Кирилл Матросов</h3>
+                                <div class="team__author team__author--active">
+                                    <h3 class="team__subtitle">Кирилл Матросов</h3>
                                 </div>
                                 <div class="team__text">
                                     <h3 class="team__spec">Оператор</h3> 
@@ -189,19 +299,178 @@
 
                             <div class="team__desc">
                                 <div class="team__author">
-                                    <h3 class="team__title">Мила Рыжкова</h3>
+                                    <h3 class="team__subtitle">Мила Рыжкова</h3>
                                 </div>
                                 <div class="team__text">
-                                    <h3 class="team__spec">  </h3> 
-                                    <p class="team__spec-desc"></p>  
+                                    <h3 class="team__spec">Оператор  </h3> 
+                                    <p class="team__spec-desc">С радостью поможет подобрать батончики и оформить заказ</p>  
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
+            <section class="section menu">
+                <h2 class="title menu__title">меню</h2>
+                <div class="acco__wrapper">
+                    <ul class="acco__list">
+                        <li class="acco__item">
+                            <button class="acco__btn acco__btn--img1" type="button">
+                                <span class="acco__title">Батончики с молоком</span>
+                            </button>
+                            <div class="acco__desc">
+                                <p class="acco__text">
+                                    Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. 
+                                    Так и вкуснее, и полезнее. 
+                                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг.
+                                    Как классно, что можно питаться полезно и вкусно, а не как попало. 
+                                    Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. 
+                                    Надо бы, кстати, бабулю поздравить с днём Победы. 
+
+                                </p>
+                            </div>
+                        </li>
+                        <li class="acco__item">
+                            <button class="acco__btn acco__btn--img2" type="button">
+                                <span class="acco__title">С медом и фруктами</span>
+                            </button>
+                            <div class="acco__desc">
+                                <p class="acco__text">
+                                    
+                                </p>
+                            </div>
+                        </li>
+                        <li class="acco__item">
+                            <button class="acco__btn acco__btn--img3" type="button">
+                                <span class="acco__title">Дикие ягоды</span>
+                            </button>
+                            <div class="acco__desc">
+                                <p class="acco__text">
+                                    
+                                </p>
+                            </div>
+                        </li>
+                    </ul> 
+                </div>    
+            </section>
+            <section class="section delivery">
+                <div class="container delivery__container"> 
+                    <h2 class="title delivery__title">Закажите доставку</h2>
+                    <form action="url" class="form__tag"> 
+                        <div class="form__part">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Имя</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Телефон</div>
+                                    <input type="text" placeholder="89022348912" class="form__input form-field">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Улица</div>
+                                    <input type="text" class="form__input form-field">
+                                </label>
+                            </div>             
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Дом</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Корпус</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Квартира</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__block-title">Этаж</div>
+                                    <input type="text"  class="form__input form-field">
+                                </label>
+                            </div>
+                        </div>            
+                        <div class="form__part">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__block-title">Комментарий</div>
+                                    <textarea name="form__textarea" class="form__textarea form-field" placeholder="Мне понравилось"></textarea>
+                                </label>
+                            </div> 
+                            <div class="form__row">
+                                <div class="form__get-change  form__adapt">
+                                    <label class="form__radio-lbl" tabindex="0">        
+                                        <input class="form__radio" value="Yes" type="radio" name="get-change">
+                                        <span class="form__radio-custom"></span>
+                                        <span class="form__radio-text" >Потребуется сдача</span>
+                                    </label>  
+                                    <label class="form__radio-lbl" tabindex="0">
+                                        <input class="form__radio" value="No" type="radio" name="get-change" checked>
+                                        <span class="form__radio-custom"> </span>
+                                        <span class="form__radio-text">Оплата по карте</span>
+                                    </label>    
+                                </div>
+                            </div>
+                            <div class="form__row form__adapt">
+                                <label for="no-call" class="form__checkbox" >
+                                    <input class="form__checkbox-input" id="no-call" type="checkbox" name="call" checked>
+                                    <span class="form__checkbox-custom"> </span>
+                                    <span class="form__checkbox-text">Не презванивать</span>
+                                </label>
+                            </div>   
+                                
+                            <div class="form__row form__adapt"> 
+                                <div class="form__buttons">
+                                    <button type="submit" class="btn form__btn">Отправить</button>
+                                </div>  
+                                <div class="form__buttons">
+                                    <button type="reset" class="reset">Очистить</button>
+                                </div> 
+                            </div>        
+                        </div>       
+                    </form>
+                </div>
+            </section>
+
+            <section class="section map">
+                <div></div>
+            </section>
+
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="footer__left">
+                        <div class="adres"> 
+                            Москва, ул.Новый Арбат, д.31/12 
+                        </div>
+                        <div class="contacts">
+                            <a href="tel:+78009039090" class="contacts__phone">
+                                8 800 903 90 90
+                            </a> 
+                        </div>
+                    </div>
+                
+                    <div class="footer__right">
+                        <ul class="socials__list">
+                            <li class="socials__item socials__item--vk"><a class="socials__link socials__link--vk" href="#"></a></li>
+                            <li class="socials__item socials__item--fb"><a class="socials__link socials__link--fb" href="#"></a></li>
+                            <li class="socials__item socials__item--tw"><a class="socials__link socials__link-tw" href="#"></a></li>
+                            <li class="socials__item socials__item--inst"><a class="socials__link socials__link--inst" href="#"></a></li>
+                        </ul>  
+                    </div>
+
+                </div>
+            </footer>
+
             
-        </div>     
+            
+        </div>  
+        
+        
     </div>
+
+<script src="main.js"></script> 
 </body>
 </html> 

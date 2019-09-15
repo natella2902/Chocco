@@ -1,0 +1,11 @@
+.delivery {
+    background-image: url('../../pictures/form_img.png');
+    background-size: cover;
+    color: $colorGreen;
+}
+
+.delivery__container {
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+}   

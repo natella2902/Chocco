@@ -1,5 +1,8 @@
 .about {
     color: $colorGray;
+    @include tablets {
+        height: 100%;
+    }
 }
 
 .about__desc {
@@ -12,7 +15,7 @@
 .about__title {
     color: $colorBlack;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 .about__text {
@@ -20,20 +23,27 @@
 }
 
 .about__text-title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: 700;
 }
 
 .about__desc-text {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 300;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
     
 }
 
 .about__list {
     display: flex; 
     justify-content: space-around;
+
+    @include tablets {
+       flex-direction: column;
+       align-items: center;
+    }
+    
+
 
     
 }
@@ -44,12 +54,16 @@
     justify-items: center;
     align-items: center;
     width: 30%;
+
+    @include tablets {
+        width: 50%;
+    }
 }
 
 .about__icon {
     border-radius: 50%;
-    width: 125px;    
-    height: 125px;
+    width: rem(125px);    
+    height: rem(125px);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -69,11 +83,11 @@
         background-position: -260px 1px;
     }
 
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 } 
 
 .about__p {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 300;
 }
 

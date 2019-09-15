@@ -1,23 +1,92 @@
 .team {
     color: $colorBlack;
+    
+    @include tablets {
+        height: 100%;
+        padding: 0 15%;
+    }
+}
+
+
+.team__title {
+    padding-bottom: rem(70px);
 }
 
 .team__list {
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-wrap: wrap;
+       
+    }
+
 }
 
 .team__desc {
     text-align: center;
 }
 
-.team__title {
-    font-size: 21px;
+.team__img {
+    padding-bottom: rem(25px);
+}
+
+.team__author {
+   
+   
+}
+
+.team__subtitle {
+    font-size: rem(21px);
     font-weight: 500;
+
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: rem(15px);
+        height: rem(15px);
+        background-image: url('../../pictures/клювик_вниз.png');
+        background-repeat:  no-repeat;
+        background-position: center center;
+        display: block;
+        position: absolute;
+        top: rem(2px);
+        right: rem(20px);
+    }
+         
+
 }
 
 .team__text {
-    font-size: 18px;
+    font-size: rem(18px);
+    height: 0;
+    overflow: hidden;
+}
+
+
+
+.team__author--active  {
+    + .team__text {
+        height: 100%;
+    }
+
+    .team__subtitle:after {
+        content: "";
+        width: rem(15px);
+        height: rem(15px);
+        background-image: url('../../pictures/клювик__вверх.png');
+        background-repeat:  no-repeat;
+        background-position: center center;
+        display: block;
+        position: absolute;
+        top: rem(2px);
+        right: rem(20px);
+    }
+       
+    
 }
 
 .team__spec {
@@ -32,15 +101,27 @@
 }
 
 .team__item {
-    width: 24%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &:nth-child(2n) {
+        padding-top: rem(60px);
+    }
+
+    @include tablets {
+        width: 50%;
+        &:nth-child(2n) {
+            padding-top: 0;
+        }
+       
+    }
 }
 
 .team__img {
-    width: 225px;
-    height: 290px;
+    width: rem(225px);
+    height: rem(290px);
 }
 
 .team__img-pic {
@@ -48,3 +129,5 @@
     height: 100%;
     display: block;
 }
+
+

@@ -1,0 +1,84 @@
+.socials {
+    width: 100%;
+    margin-bottom: rem(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.socials__title {
+    font-family: 'gothampro', sans-serif;
+    font-size: rem(14px);
+    font-weight: bold;
+    line-height: rem(54px);
+    margin-bottom: -rem(10px);
+
+}
+
+.socials__list {
+    display: flex;
+}
+
+.socials__item {
+    justify-content: space-around;
+    background: red no-repeat center;
+    margin-right: rem(10px);
+
+
+    width: rem(23px);
+    height: rem(23px);   
+    transition: 1s;
+}
+  
+
+
+.socials__item--vk {
+    background-image: url('/svg/vk.svg');
+
+}
+
+
+.socials__item--fb {
+    background-image: url('/svg/fb_hover.svg');
+
+}
+
+
+.socials__item--tw {
+    background-image: url('/svg/twitter.svg');
+}
+
+
+.socials__item--inst {
+    background-image: url('/svg/inst.svg');
+}
+
+/*
+
+.socials__item:hover {
+    background: #ec1e79 no-repeat center;
+    background-image: url('../../pictures/spritesheet2.png');
+}
+
+.socials__item--vk:hover {
+    background-position: -170px 4px;
+}
+
+.socials__item--fb:hover {
+    background-position: -189px 1px;
+}
+
+.socials__item--g:hover {
+    background-position: -210px 3px;
+}
+.socials__item--tw:hover {
+    background-position: -255px 3px;
+}
+
+.socials__item--mail:hover {
+    background-position: -233px 3px;
+}
+
+*/

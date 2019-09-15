@@ -1,7 +1,7 @@
 .nav {
 
     &__item {
-        margin-left: 25px;
+        margin-left: rem(25px);
 
         &:last-child {
             margin-right: 0;
@@ -14,9 +14,13 @@
     }
 
     &__link {
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: normal;
 
+    }
+
+    @include tablets {
+        display: none;
     }
 }
 
