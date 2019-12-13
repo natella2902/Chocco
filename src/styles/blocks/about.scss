@@ -1,0 +1,104 @@
+.about {
+    color: $colorGray;
+    @include tablets {
+        height: 100%;
+    }
+}
+
+.about__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__title {
+    color: $colorBlack;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about__text {
+    text-align: center;
+}
+
+.about__text-title {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.about__desc-text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    
+}
+
+.about__list {
+    display: flex; 
+    justify-content: space-around;
+
+    @include tablets {
+       flex-direction: column;
+       align-items: center;
+    }
+    
+
+
+    
+}
+
+.about__item {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 30%;
+
+    @include tablets {
+        width: 50%;
+    }
+}
+
+.about__icon {
+    border-radius: 50%;
+    width: 125px;    
+    height: 125px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat $colorGrayLight center center;
+    
+    /*
+    background-image: url(../pictures/spritesheet.png);
+
+    &__first {
+        background-position: -0px -5px;
+    }
+
+    &__second {
+        background-position: -128px -2px;
+    }
+
+    &__third {
+        background-position: -260px 1px;
+    }
+*/
+    margin-bottom: 30px;
+
+} 
+.about__pic {
+    display: block;
+    width: 75px;
+    height: 75px;
+    stroke: #2a2a29; 
+    opacity: 0.8;
+
+}
+
+.about__p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
