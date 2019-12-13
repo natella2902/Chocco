@@ -70,7 +70,7 @@
 
 .slider-bg:before {
     content: "";
-    background-image: url('../../pictures/bg__blue.png');
+    background-image: url('./pictures/bg__blue.png');
     width: rem(380px);
     height: rem(310px);
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@
 
 .slider-bg:after {
     content: "";
-    background-image: url('../../pictures/slider_least.png');
+    background-image: url('./pictures/slider_least.png');
     width: rem(462px);
     height: rem(326px);
     background-repeat: no-repeat;
@@ -183,12 +183,12 @@
 
 .arrow__left {
     left: 0;
-    background-image: url('/pictures/arrow-left.png')
+    background-image: url('./pictures/arrow-left.png')
 }
 
 .arrow__right {
     right: 0;
-    background-image: url('/pictures/arrow_right.png')
+    background-image: url('./pictures/arrow_right.png')
 }
 
 .slider__image {
