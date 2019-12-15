@@ -10,36 +10,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <ul class="nav-rt__list">
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link nav-rt__link--active"></a>
-                </li>
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link"></a>
-                </li>
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link"></a>
-                </li>
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link"></a>
-                </li>
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link"></a>
-                </li>
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link"></a>
-                </li>
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link"></a>
-                </li>
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link"></a>
-                </li>
-                <li class="nav-rt__item">
-                    <a href="#" class="nav-rt__link"></a>
-                </li>
-            </ul>
-            <section class="section hero">
+            <section class="section hero active">
                 <div class="container hero__container">
                     <header class="header__top">
                         <div class="logo header__logo">
@@ -48,25 +19,25 @@
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">О нас</a>
+                                    <a href="#" class="nav__link" data-scroll-to="1">О нас</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">Батончики</a>
+                                    <a href="#" class="nav__link" data-scroll-to="2">Батончики</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">Команда</a>
+                                    <a href="#" class="nav__link" data-scroll-to="3">Команда</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">Меню</a>
+                                    <a href="#" class="nav__link" data-scroll-to="4">Меню</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">Отзывы</a>
+                                    <a href="#" class="nav__link" data-scroll-to="5">Отзывы</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">Как мы работаем</a>
+                                    <a href="#" class="nav__link" data-scroll-to="6">Как мы работаем</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#" class="nav__link">Контакты</a>
+                                    <a href="#" class="nav__link" data-scroll-to="7">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -456,7 +427,6 @@
                                     <div class="form__checkbox-text">Не презванивать</div>
                                 </label>
                             </div>   
-                                
                             <div class="form__row form__adapt"> 
                                 <div class="form__buttons">
                                     <button type="submit" id ="btn" class="btn form__btn">Отправить</button>
@@ -469,64 +439,89 @@
                     </form>
                 </div>
             </section>
-
             <section class="section map">
                <div class="container">
                     <div id="map"> 
-
                     </div>
                </div>
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <div class="footer__left">
+                            <div class="adres"> 
+                               Санкт-Петербург, ул.Миллионная, д.31/12 
+                            </div>
+                            <div class="contacts">
+                                <a href="tel:+78009039090" class="contacts__phone footer__contacts__phone">
+                                    8 800 903 90 90
+                                </a> 
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            <ul class="socials__list">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg class="socials__pic" viewbox="0 0 20 20" height="20" width="20">
+                                            <use href = "./images/icons/sprite.svg#vk"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg class="socials__pic" viewbox="0 0 20 20" height="20" width="20"> 
+                                            <use href = "./images/icons/sprite.svg#f"> </use>
+                                         </svg>
+                                    </a></li>
+                                <li class="socials__item socials__item--tw">
+                                    <a class="socials__link socials__link-tw" href="#">
+                                        <svg class="socials__pic" viewbox="0 0 20 20" height="20" width="20"> 
+                                            <use href = "./images/icons/sprite.svg#in"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials__item socials__item--tw">
+                                    <a class="socials__link socials__link-tw" href="#">
+                                        <svg class="socials__pic" viewbox="0 0 20 20" height="20" width="20"> 
+                                            <use href = "./images/icons/sprite.svg#tv"> </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>  
+                        </div>
+                    </div>
+                </footer>
             </section>
-
-            <footer class="footer">
-                <div class="container footer__container">
-                    <div class="footer__left">
-                        <div class="adres"> 
-                           Санкт-Петербург, ул.Миллионная, д.31/12 
-                        </div>
-                        <div class="contacts">
-                            <a href="tel:+78009039090" class="contacts__phone footer__contacts__phone">
-                                8 800 903 90 90
-                            </a> 
-                        </div>
-                    </div>
-                
-                    <div class="footer__right">
-                        <ul class="socials__list">
-                            <li class="socials__item">
-                                <a class="socials__link" href="#">
-                                    <svg class="socials__pic" viewbox="0 0 20 20" height="20" width="20">
-                                        <use href = "./images/icons/sprite.svg#vk"> </use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a class="socials__link" href="#">
-                                    <svg class="socials__pic" viewbox="0 0 20 20" height="20" width="20"> 
-                                        <use href = "./images/icons/sprite.svg#f"> </use>
-                                     </svg>
-                                </a></li>
-                            <li class="socials__item socials__item--tw">
-                                <a class="socials__link socials__link-tw" href="#">
-                                    <svg class="socials__pic" viewbox="0 0 20 20" height="20" width="20"> 
-                                        <use href = "./images/icons/sprite.svg#in"> </use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials__item socials__item--tw">
-                                <a class="socials__link socials__link-tw" href="#">
-                                    <svg class="socials__pic" viewbox="0 0 20 20" height="20" width="20"> 
-                                        <use href = "./images/icons/sprite.svg#tv"> </use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>  
-                    </div>
-                </div>
-            </footer>
         </div>  
     </div>
+    <ul class="nav-rt__list">
+        <li class="nav-rt__item active">
+            <a href="#" class="nav-rt__link" data-scroll-to="0"></a>
+        </li>
+        <li class="nav-rt__item">
+            <a href="#" class="nav-rt__link" data-scroll-to="1"></a>
+        </li>
+        <li class="nav-rt__item">
+            <a href="#" class="nav-rt__link" data-scroll-to="2"></a>
+        </li>
+        <li class="nav-rt__item">
+            <a href="#" class="nav-rt__link" data-scroll-to="3"></a>
+        </li>
+        <li class="nav-rt__item">
+            <a href="#" class="nav-rt__link" data-scroll-to="4"></a>
+        </li>
+        <li class="nav-rt__item">
+            <a href="#" class="nav-rt__link" data-scroll-to="5"></a>
+        </li>
+        <li class="nav-rt__item">
+            <a href="#" class="nav-rt__link" data-scroll-to="6"></a>
+        </li>
+        <li class="nav-rt__item">
+            <a href="#" class="nav-rt__link" data-scroll-to="7"></a>
+        </li>
+    </ul>
+
+
 </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=848ddeea-2091-41dd-879f-7bc96059f063&lang=ru_RU" type="text/javascript"></script>
 <script src="main.min.js"></script>
