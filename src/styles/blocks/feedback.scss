@@ -16,7 +16,7 @@
     display: flex;
     background-color: #f8faf9;
     padding: 6%;
-    margin-bottom: rem(30px);
+    margin-bottom: 30px;
 
     @include tablets {
         flex-direction: column;
@@ -25,9 +25,9 @@
 }
 
 .feedback__img {
-    width: rem(254px);
-    height: rem(260px);
-    margin-right: rem(10px);
+    width: 254px;
+    height: 260px;
+    margin-right: 10px;
 }
 
 .feedback__img-pic {
@@ -48,19 +48,19 @@
 }
 
 .feedback__def {  
-    font-size: rem(30px);
+    font-size: 30px;
     font-weight: 500;
-    margin-top: rem(15px);
+    margin-top: 15px;
 }
 
 .feedback__def-text {
-    font-size: rem(18px);
+    font-size: 18px;
     font-weight: 400;
-    margin-bottom: rem(40px);
+    margin-bottom: 40px;
 }
 
 .feedback__author {
-    font-size: rem(18px);
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -71,11 +71,12 @@
 
 
 .feedback__item {
-    width: rem(94px);
-    height: rem(94px);
+    border: 5px solid transparent;
+    width: 94px;
+    height: 94px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: rem(40px);
+    margin-right: 40px;
    
     &:last-child {
         margin-right: 0;

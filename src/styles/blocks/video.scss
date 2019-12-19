@@ -1,0 +1,21 @@
+.video {
+  background-color: #f8faf9;
+}
+
+.video .container  {
+  align-items: center;
+}
+
+
+.video__title {
+  color: $colorBlack2;
+  margin-bottom: 60px;
+}
+
+.player {
+  display: flex;
+  width: 660px;
+  height: 370px;
+ 
+}
+
