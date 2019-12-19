@@ -1,7 +1,69 @@
 .about {
     color: $colorGray;
+    
+
+    &::after {
+        content: "";
+        background-image: url('./pictures/leaf3.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 59px;
+        height: 112px;
+        position: absolute;
+        z-index: 5;
+        left: 5%;
+        bottom: -10%;
+    }
+
+    
+    &::before {
+        content: "";
+        background-image: url('./pictures/leaf2.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 141px;
+        height: 105px;
+        position: absolute;
+        z-index: 5;
+        right: 25%;
+        bottom: -4%;
+ 
+    }
+
     @include tablets {
         height: 100%;
+    }
+
+
+}
+
+.about__container {
+        
+    &::before {
+        content: "";
+        background-image: url('./pictures/leaf4.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 191px;
+        height: 314px;
+        position: absolute;
+        z-index: 20;
+        left: -3%;
+        bottom: 40%;
+    }
+
+
+    &::after {
+        content: "";
+        background-image: url('./pictures/berry3.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 161px;
+        height: 315px;
+        position: absolute;
+        z-index: 20;
+        left: -3%;
+        bottom: -16%;
     }
 }
 
@@ -51,11 +113,38 @@
     justify-items: center;
     align-items: center;
     width: 30%;
+    position: relative;
+
+    &:nth-child(2) {
+        
+        &::before, &::after {
+            content: "";
+            background-image: url('./pictures/dot.png');
+            background-repeat: no-repeat;
+            display: block;
+            width: 67px;
+            height: 21px;
+            position: absolute;
+            z-index: 10;
+            top: 15%;
+        }
+
+        &::before {
+            left: -18%;
+        }
+
+        &::after {
+            right: -18%;
+        }
+
+    }
 
     @include tablets {
         width: 50%;
     }
 }
+
+
 
 .about__icon {
     border-radius: 50%;

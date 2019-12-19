@@ -41,7 +41,7 @@
 
 
 .slider__wrapper {
-    max-width: rem(950px);
+    max-width: 950px;
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -63,22 +63,22 @@
 }
 
 .slider__img {
-    width: rem(363px);
-    height: rem(383px);
+    width: 363px;
+    height: 383px;
     z-index: 5;
 }
 
 .slider-bg:before {
     content: "";
     background-image: url('./pictures/bg__blue.png');
-    width: rem(380px);
-    height: rem(310px);
+    width: 380px;
+    height: 310px;
     background-repeat: no-repeat;
     position: absolute;
     display: block;
     z-index: -5;
-    left: rem(50px);
-    bottom: rem(-10px);
+    left: 50px;
+    bottom: -10px;
     
     
 }
@@ -86,14 +86,14 @@
 .slider-bg:after {
     content: "";
     background-image: url('./pictures/slider_least.png');
-    width: rem(462px);
-    height: rem(326px);
+    width: 462px;
+    height: 326px;
     background-repeat: no-repeat;
     position: absolute;
     display: block;
     z-index: -8;
-    left: rem(-30px);
-    bottom: rem(-40px);
+    left: -30px;
+    bottom: -40px;
     
     
 }
@@ -107,38 +107,38 @@
 }
 
 .slider__title {
-    max-width: rem(360px);
-    font-size: rem(36px);
+    max-width: 360px;
+    font-size: 36px;
     text-align: start;
     color: $colorGrayDark;
 }
 
 .slider__par {
     color: $colorGrayDark;
-    font-size: rem(24px);
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 5%;
 }
 
 .slider__text {
-    font-size: rem(18px);
+    font-size: 18px;
     font-weight: 400;
     color: $colorGray;
-    max-width: rem(340px);
+    max-width: 340px;
     margin-bottom: 5%;
 }
 
 .slider__desc {
     display: flex;
     justify-content: space-between;
-    width: rem(340px);
+    width: 340px;
     color: #333333;
 }
 
 .slider__kk, .slider__weight {
     display: flex;
     flex-direction: column;
-    font-size: rem(18px);
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 5%;
     margin-right: 20%;
@@ -146,21 +146,21 @@
 }
 
 .slider__kk-value, .slider__weight-value {
-    font-size: rem(18px);
+    font-size: 18px;
     font-weight: 700;
 }
 
 .slider__footer {
     display: flex;
     justify-content: space-between;
-    width: rem(340px);
+    width: 340px;
 }
 
 .slider__desc--price {
-    font-size: rem(60px);
+    font-size: 60px;
     font-weight: 300;
     color: #0d0d0d;
-    line-height: rem(60px);
+    line-height: 60px;
     text-transform: uppercase;
 
 }

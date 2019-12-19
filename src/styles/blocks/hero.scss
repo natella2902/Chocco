@@ -2,11 +2,58 @@
     width: 100%;
     background-color: $colorBlue;
     display: flex;
-  
+    position: relative;
+    background-image: url('./pictures/leafWelcom.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+    &::after {
+        content: "";
+        background-image: url('./pictures/berry1.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 220px;
+        height: 208px;
+        position: absolute;
+        z-index: 5;
+        right: 20%;
+        bottom: 10%;
+ 
+    }
+
+    &::before {
+        content: "";
+        background-image: url('./pictures/leaf1.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 236px;
+        height: 203px;
+        position: absolute;
+        z-index: 10;
+        right: 2%;
+        bottom: 20%;
+    }
+ 
+    
+    
 }
 
 .hero__container {
     justify-content: start;
+    
+    &::before {
+        content: "";
+        background-image: url('./pictures/berry2.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 111px;
+        height: 108px;
+        position: absolute;
+        z-index: 15;
+        right: 2%;
+        bottom: -5%;
+    }
+  
 }
 
 .hero__content {

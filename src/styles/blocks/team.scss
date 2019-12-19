@@ -1,6 +1,18 @@
 .team {
     color: $colorBlack;
     
+    &::before {
+        content: "";
+        background-image: url('./pictures/leaf5.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 196px;
+        height: 328px;
+        position: absolute;
+        z-index: 20;
+        right: 0;
+    }
+    
     @include tablets {
         height: 100%;
         padding: 0 15%;
