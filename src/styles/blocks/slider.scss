@@ -1,8 +1,24 @@
 .product {
+    
+    position: relative;
     background: rgb(160,237,251);
     background: linear-gradient(8deg, rgba(160,237,251,1) 0%, rgba(137,233,252,0.9979342078628326) 50%,
      rgba(88,225,253,1) 100%); 
     z-index: -25;
+    
+    &::after {
+        content: "";
+        background-image: url('./pictures/leaf6.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 196px;
+        height: 237px;
+        position: absolute;
+        z-index: -10;
+        right: 0;
+        bottom: 0;
+    }
+
     
 }
 

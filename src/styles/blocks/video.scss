@@ -1,9 +1,63 @@
 .video {
   background-color: #f8faf9;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url('./pictures/leaf7.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 102px;
+    height: 321px;
+    position: absolute;
+    left: 0;
+    top: -25%;
+  
+  }
+
+  &::after {
+    content: "";
+    background-image: url('./pictures/leaf9.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 242px;
+    height: 264px;
+    position: absolute;
+    right: -5%;
+    bottom: -15%;
+  
+  }
+
 }
 
-.video .container  {
+.container__video  {
   align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url('./pictures/leaf10.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 72px;
+    height: 135px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    background-image: url('./pictures/leaf11.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 90px;
+    height: 77px;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+  }
+
 }
 
 
