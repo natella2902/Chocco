@@ -78,6 +78,9 @@
     color: $colorBlack;
     font-weight: 700;
     margin-bottom: 15px;
+    @include tablets {
+        margin: 0;
+    }
 }
 
 .about__text {
@@ -93,6 +96,10 @@
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 60px;
+
+    @include tablets {
+        margin: 0;
+    }
     
 }
 
@@ -127,6 +134,10 @@
             position: absolute;
             z-index: 10;
             top: 15%;
+
+            @include tablets {
+                display: none;
+            }
         }
 
         &::before {
@@ -172,6 +183,10 @@
     }
 */
     margin-bottom: 30px;
+
+    @include tablets {
+        margin-bottom: 20px;
+    }
 
 } 
 .about__pic {

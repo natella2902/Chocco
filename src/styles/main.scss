@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800&display=swap&subset=cyrillic');
 
-// breakpoints
-
-$tablets: 740px;
-$phones: 480px;
-
 
 @import './base/mixins', './base/variables', './base/layout';
 
