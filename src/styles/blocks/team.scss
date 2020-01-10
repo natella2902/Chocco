@@ -32,6 +32,14 @@
         z-index: 25;
         right: 0%;
         top: -5%;
+
+        @include tablets {
+          width: 150px;
+          height: 150px;
+          right: -28%;
+        }
+
+
     }
 
     &::after {
@@ -45,6 +53,14 @@
         z-index: 25;
         left: 0%;
         bottom: -6%;
+
+        
+        @include tablets {
+          width: 150px;
+          height: 150px;
+          bottom: -10%;
+          left: -20%;
+        }
     }
 
 }
@@ -52,6 +68,11 @@
 
 .team__title {
     padding-bottom: 70px;
+
+    @include tablets {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .team__list {
@@ -70,7 +91,7 @@
 }
 
 .team__img {
-    padding-bottom: 25px;
+    padding-bottom: 0;
 }
 
 .team__author {
@@ -81,10 +102,13 @@
 .team__subtitle {
     font-size: 21px;
     font-weight: 500;
-
     margin-left: 0;
     margin-right: 0;
     position: relative;
+
+    @include tablets {
+        margin: 0;
+    }
 
     &:after {
         content: "";
@@ -106,6 +130,10 @@
     font-size: 18px;
     height: 0;
     overflow: hidden;
+
+    @include tablets {
+        line-height: 18px;    
+    }
 }
 
 
@@ -132,9 +160,13 @@
 }
 
 .team__spec {
-   
     font-weight: 400;
     color: #281e1e;
+
+    @include tablets {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .team__spec-desc {
@@ -144,19 +176,14 @@
 
 .team__item {
     width: 25%;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    &:nth-child(2n) {
-        padding-top: 60px;
-    }
-
     @include tablets {
         width: 50%;
-        &:nth-child(2n) {
-            padding-top: 0;
-        }
+        min-height: 400px;
        
     }
 }

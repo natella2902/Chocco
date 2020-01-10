@@ -16,7 +16,13 @@
     position: absolute;
     z-index: -5;
     right: 3%;
-    bottom: 7%;
+    bottom: 5%;
+
+    
+    @include tablets {
+      width: 150px;
+      height: 250px;
+    }
   }
 
   &::after {
@@ -30,6 +36,12 @@
     z-index: -5;
     left: 0;
     bottom: 10%;
+
+    
+    @include tablets {
+      width: 60px;
+      height: 60px;
+  }
   }
 
 

@@ -58,7 +58,7 @@ scrollToSection = direction => {
 
 $('.wrapper').on('wheel', e => {
   const deltaY = e.originalEvent.deltaY;
-  console.log('weel event');
+  //console.log('weel event');
 
   //next
   if(deltaY > 0) {
@@ -78,7 +78,7 @@ $('.wrapper').on('touchMove', e => {
 })
 
 $(document).on("keydown", e => {
-  console.log(e.keyCode);
+  //console.log(e.keyCode);
   switch(e.keyCode) {
     case 40:
       scrollToSection("next");
@@ -94,7 +94,7 @@ $("[data-scroll-to]").on('click', e => {
   e.preventDefault();
 
   const target = $(e.currentTarget).attr('data-scroll-to');
-  console.log(target);
+  //console.log(target);
 
   performTransition(target);
 })

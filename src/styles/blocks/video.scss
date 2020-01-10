@@ -12,6 +12,12 @@
     position: absolute;
     left: 0;
     top: -25%;
+
+    
+    @include tablets {
+      width: 150px;
+      height: 400px;
+    }
   
   }
 
@@ -25,6 +31,12 @@
     position: absolute;
     right: -5%;
     bottom: -15%;
+
+    
+    @include tablets {
+      width: 250px;
+      height: 280px;
+    }
   
   }
 
@@ -44,6 +56,12 @@
     position: absolute;
     left: 0;
     bottom: 0;
+
+    
+    @include tablets {
+      width: 100px;
+      height: 150px;
+    }
   }
 
   &::after {
@@ -56,10 +74,20 @@
     position: absolute;
     right: 10%;
     top: 20%;
+
+    @include tablets {
+      width: 120px;
+      height: 100px;
+    }
+
   }
 
 }
 
+#yt-player {
+  max-height: 100%;
+  max-width: 100%;
+}
 
 .video__title {
   color: $colorBlack2;
@@ -70,6 +98,11 @@
   display: flex;
   width: 660px;
   height: 370px;
+
+  @include tablets {
+    width: 591px;
+    height: 331px;
+  }
  
 }
 

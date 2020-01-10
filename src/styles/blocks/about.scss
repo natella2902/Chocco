@@ -13,6 +13,11 @@
         z-index: 5;
         left: 5%;
         bottom: -10%;
+
+        @include tablets {
+            width: 75px;
+            height: 120px;
+        }
     }
 
     
@@ -27,7 +32,14 @@
         z-index: 5;
         right: 25%;
         bottom: -4%;
- 
+
+        @include tablets {
+            width: 150px;
+            height: 120px;
+            top: 33%;
+            left: 50%;
+            
+        }
     }
 
     @include tablets {
@@ -64,6 +76,11 @@
         z-index: 20;
         left: -3%;
         bottom: -16%;
+
+        @include tablets {
+            width: 180px;
+            height: 400px;
+        }
     }
 }
 
@@ -78,6 +95,7 @@
     color: $colorBlack;
     font-weight: 700;
     margin-bottom: 15px;
+
     @include tablets {
         margin: 0;
     }
@@ -90,6 +108,11 @@
 .about__text-title {
     font-size: 27px;
     font-weight: 700;
+
+    @include tablets {
+        margin-bottom: 15px;
+        line-height: 27px;
+    }
 }
 
 .about__desc-text {
@@ -98,7 +121,8 @@
     margin-bottom: 60px;
 
     @include tablets {
-        margin: 0;
+        margin-bottom: 10px;
+        //line-height: 18px;
     }
     
 }
@@ -165,23 +189,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: no-repeat $colorGrayLight center center;
-    
-    /*
-    background-image: url(../pictures/spritesheet.png);
-
-    &__first {
-        background-position: -0px -5px;
-    }
-
-    &__second {
-        background-position: -128px -2px;
-    }
-
-    &__third {
-        background-position: -260px 1px;
-    }
-*/
+    background: no-repeat $colorGrayLight center center;    
     margin-bottom: 30px;
 
     @include tablets {
@@ -189,6 +197,7 @@
     }
 
 } 
+
 .about__pic {
     display: block;
     width: 75px;
@@ -201,5 +210,10 @@
 .about__p {
     font-size: 18px;
     font-weight: 300;
+
+    @include tablets {
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
 }
 

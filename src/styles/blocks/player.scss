@@ -20,18 +20,37 @@
     bottom: 0;
     background: url("./pictures/granolaBar.jpg") center center / cover no-repeat;
     cursor: pointer;
+
+    @include tablets {
+      width: 591px;
+      
+    }
+
 }
 
 .player__splash-pic {
   display: block;
   width: 82px;
   height: 118px;
+
+  @include tablets {
+    
+  }
   
 }
 
 
-
 .player__wrapper {
+
+  width: 660px;
+  height: 370px;
+
+    @include tablets {
+      width: 591px;
+      height: 331px;
+
+    }
+
   &.active .player__splash {
     display: none;
   }
@@ -48,6 +67,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 25px;
+
+  @include tablets {
+    
+  }
 }
 
 .player__start {

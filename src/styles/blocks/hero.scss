@@ -18,6 +18,11 @@
         z-index: 5;
         right: 20%;
         bottom: 10%;
+
+            
+        @include tablets {
+            display: none;
+        }
  
     }
 
@@ -32,6 +37,11 @@
         z-index: 10;
         right: 2%;
         bottom: 20%;
+
+        @include tablets {
+            display: none;
+            
+        }
     }
 }
 
@@ -49,6 +59,14 @@
         z-index: 15;
         right: 2%;
         bottom: -5%;
+
+        @include tablets {
+            width: 440px;
+            height: 320px;
+            background-image: url('./pictures/berry_tabl.png');
+            top: 18%;
+            left: 20%;
+        }
     }
   
 }
@@ -82,7 +100,7 @@
     width: 50%;
 
     @include tablets {
-        margin-bottom: 32px;
+        margin-bottom: 0;
     }
     
 }
@@ -91,13 +109,13 @@
 .hero__title {
     font-size: 60px;
     text-align: start;
+    line-height: 60px;
     margin: 100px 0 30px;
 
 
     @include tablets {
+        width: 100%;
         text-align: center;
-        font-size: 3.5rem;
-        line-height: 3rem;
         margin: 0;
     }
 }
@@ -106,11 +124,11 @@
     width: 80%;
     font-size: 21px;
     margin-bottom: 30px;
+
     @include tablets {
-        width: 80%;
+        width: 50%;
         text-align: center;
-        line-height: 1.3rem;
-        margin-bottom: 3%;
+        margin: 15px 0 25px;
     }
 }
 

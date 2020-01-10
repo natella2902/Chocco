@@ -65,7 +65,7 @@ task( 'styles', () => {
     .pipe(concat('main.min.scss'))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulpif(env==="prod", px2rem({dpr : 1})))
+    .pipe(px2rem({dpr : 1}))
     .pipe(gulpif(env==="dev", 
       autoprefixer({
         cascade: false 
