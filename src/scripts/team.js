@@ -1,17 +1,22 @@
-const team = document.querySelector('.team__list');
-const team__li = document.querySelector('.team__list').getElementsByTagName('li');
+let teams = document.querySelectorAll('.team__item');
 
-for (var i=0; i < team__li.length; i++) {
-    team__li[i].addEventListener( 'click', function(event) {
+for (let i=0; i < teams.length; i++) {
+
+    teams[i].addEventListener( 'click', function(event) {
       event.preventDefault();
-      event.currentTarget.querySelector('.team__author').classList.toggle('team__author--active');
+      let cl =  event.currentTarget.childNodes[3].childNodes[1];
+      let team__author = teams[i].querySelector('.team__author');
+      
+
+      for (let i=0; i < teams.length; i++) {
+        teams[i].childNodes[3].childNodes[1].classList.remove('team__author--active');  
+      }
+
+      cl.classList.add('team__author--active');
+ 
     })
+
+
 }
   
  
-  
-
-
-
- 
-

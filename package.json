@@ -4,6 +4,7 @@
   "description": "This is my study-project in \"LoftSchool\", where I am learning web-development.",
   "main": "main.js",
   "dependencies": {
+    "bxslider": "^4.2.14",
     "jquery": "^3.4.1",
     "jquery-touchswipe": "^1.6.19",
     "mobile-detect": "^1.4.4",

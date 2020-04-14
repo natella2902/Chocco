@@ -102,6 +102,7 @@ table {
   display: flex;
  // height: 100vh;
   min-height: 650px;
+  position: relative;
  // border: 1px solid red;
 
  @include tablets {

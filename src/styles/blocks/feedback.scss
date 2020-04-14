@@ -42,47 +42,33 @@
         }
     }
     
+    
     @include tablets {
         height: 100%;
         padding: 0 15%;
     }
+
 }
 
-
-.feedback__container {
-  
-}
-
-.feedback__title {
-    color: $colorBlack;
-}
-
-.feedback__desc {
+.feedback__wrapper {
     display: flex;
-    background-color: #f8faf9;
-    padding: 6%;
-    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.feedback__slider__container {
+    width: 940px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__slider {
+    //border: 1px solid red;
     position: relative;
+    height: 100%;
+    overflow: hidden;
 
-    &::before {
-        content: "";
-        background-image: url('./pictures/leaf8.png');
-        background-repeat: no-repeat;
-        display: block;
-        width: 127px;
-        height: 180px;
-        position: absolute;
-        right: 0;
-        top: 0;
-
-        @include tablets {
-            width: 119px;
-        }
-    }
-
-
-
-
+    
     &::after {
         content: "";
         display: block;
@@ -98,20 +84,70 @@
             top: -5%;
             right: 40%;
         }
-    }
 
+    }
+}
+
+.feedback__slider__list {
+   white-space: nowrap;
+   font-size: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   will-change: transform;
+   transition: 1s;
+}
+
+.feedback__slider__item {
+    width: 940px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+     
+
+}
+
+.feedback__title {
+    color: $colorBlack;
+}
+
+.feedback__desc {
+    display: flex;
+    width: 100%;
+    background-color: #f8faf9;
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
 
     @include tablets {
         flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
     }
+
+    &::before {
+        content: "";
+        background-image: url('./pictures/leaf8.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 127px;
+        height: 180px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+
+        @include tablets {
+            width: 119px;
+        }
+    }
+
 }
 
 .feedback__img {
     width: 254px;
     height: 260px;
-    margin-right: 10px;
+    margin: 25px;
 
     @include tablets {
         width: 204px;
@@ -129,8 +165,11 @@
 
 
 .feedback__text {
+    display: flex;
+    flex-direction: column;
     color: $colorGrayDark;
     width: 53%;
+    white-space: normal;
 
     @include tablets {
         text-align: center;
@@ -162,12 +201,11 @@
 
 
 .feedback__item {
-    border: 5px solid transparent;
+    border: 7px solid transparent;
     width: 94px;
     height: 94px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 40px;
    
     &:last-child {
         margin-right: 0;
@@ -175,9 +213,13 @@
     }
 
     &:hover {
-        border: 5px solid $colorGreen;
+        border: 7px solid $colorGreen;
     }
 
 }
 
 
+
+.feedback__item--active {
+    border: 7px solid $colorGreen;
+}
