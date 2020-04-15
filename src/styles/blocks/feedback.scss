@@ -45,7 +45,7 @@
     
     @include tablets {
         height: 100%;
-        padding: 0 15%;
+        padding: 0;
     }
 
 }
@@ -57,17 +57,27 @@
 
 .feedback__slider__container {
     width: 940px;
-    height: 500px;
+    height: 510px;
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+        width: 720px;
+        height: 520px;
+    }
+
 }
 
 .feedback__slider {
-    //border: 1px solid red;
     position: relative;
     height: 100%;
     overflow: hidden;
+    background-color: #f8faf9;
+    //margin-bottom: 30px;
 
+    @include tablets {
+      //margin-bottom: 35px;
+    }
     
     &::after {
         content: "";
@@ -78,11 +88,11 @@
         border-radius: 50%;
         position: absolute;
         right: 45%;
-        top: -8%;
+        top: -6%;
 
         @include tablets {
-            top: -5%;
-            right: 40%;
+            top: -6%;
+            right: 42%;
         }
 
     }
@@ -103,7 +113,10 @@
     height: 100%;
     display: inline-block;
     position: relative;
-     
+
+    @include tablets {
+        width: 720px;
+    }
 
 }
 
@@ -114,7 +127,7 @@
 .feedback__desc {
     display: flex;
     width: 100%;
-    background-color: #f8faf9;
+    //background-color: #f8faf9;
     padding: 25px;
     margin-bottom: 30px;
     position: relative;
@@ -122,7 +135,8 @@
     @include tablets {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 30px;
+        padding: 0;
+        margin-bottom: 0;
     }
 
     &::before {
@@ -138,7 +152,7 @@
         z-index: 10;
 
         @include tablets {
-            width: 119px;
+          //  width: 119px;
         }
     }
 
@@ -150,9 +164,9 @@
     margin: 25px;
 
     @include tablets {
-        width: 204px;
-        height: 209px;
-        margin: 30px 0;
+        width: 131px;
+        height: 133px;
+        margin: 50px 0 30px;
     }
 }
 
@@ -172,8 +186,8 @@
     white-space: normal;
 
     @include tablets {
-        text-align: center;
-        width: 90%;
+       text-align: center;
+       width: 90%;
     }
 }
 
@@ -181,12 +195,21 @@
     font-size: 30px;
     font-weight: 500;
     margin-top: 15px;
+
+    @include tablets {
+        margin: 0 0 20px;
+    }
 }
 
 .feedback__def-text {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 40px;
+
+    @include tablets {
+        margin-bottom: 15px;
+    }
+
 }
 
 .feedback__author {
@@ -199,13 +222,17 @@
     justify-content: center;
 }
 
-
 .feedback__item {
     border: 7px solid transparent;
     width: 94px;
     height: 94px;
     border-radius: 50%;
     overflow: hidden;
+    margin-right: 10px;
+
+    @include tablets {
+        margin-right: 25px;
+    }
    
     &:last-child {
         margin-right: 0;
@@ -216,8 +243,9 @@
         border: 7px solid $colorGreen;
     }
 
-}
 
+
+}
 
 
 .feedback__item--active {
