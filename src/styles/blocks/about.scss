@@ -1,5 +1,6 @@
 .about {
     color: $colorGray;
+    position: relative;
     
 
     &::after {
@@ -30,15 +31,12 @@
         height: 105px;
         position: absolute;
         z-index: 5;
-        right: 25%;
+        right: 5%;
         bottom: -4%;
 
         @include tablets {
             width: 150px;
             height: 120px;
-            top: 33%;
-            left: 50%;
-            
         }
     }
 
