@@ -1,0 +1,108 @@
+.video {
+  background-color: #f8faf9;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url('./pictures/leaf7.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 102px;
+    height: 321px;
+    position: absolute;
+    left: 0;
+    top: -25%;
+
+    
+    @include tablets {
+      width: 150px;
+      height: 400px;
+    }
+  
+  }
+
+  &::after {
+    content: "";
+    background-image: url('./pictures/leaf9.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 242px;
+    height: 264px;
+    position: absolute;
+    right: -5%;
+    bottom: -15%;
+
+    
+    @include tablets {
+      width: 250px;
+      height: 280px;
+    }
+  
+  }
+
+}
+
+.container__video  {
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url('./pictures/leaf10.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 72px;
+    height: 135px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    
+    @include tablets {
+      width: 100px;
+      height: 150px;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url('./pictures/leaf11.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 90px;
+    height: 77px;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+
+    @include tablets {
+      width: 120px;
+      height: 100px;
+    }
+
+  }
+
+}
+
+#yt-player {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.video__title {
+  color: $colorBlack2;
+  margin-bottom: 60px;
+}
+
+.player {
+  display: flex;
+  width: 660px;
+  height: 370px;
+
+  @include tablets {
+    width: 591px;
+    height: 331px;
+  }
+ 
+}
+

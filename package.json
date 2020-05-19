@@ -1,7 +1,7 @@
 {
-  "name": "East-West",
+  "name": "Chocco",
   "version": "1.0.0",
-  "description": "This is my project",
+  "description": "This is my study-project in \"LoftSchool\", where I am learning web-development.",
   "main": "main.js",
   "dependencies": {
     "bxslider": "^4.2.14",
@@ -38,13 +38,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natella2902/East-West.git"
+    "url": "git+https://github.com/natella2902/Chocco.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/natella2902/East-West/issues"
+    "url": "https://github.com/natella2902/Chocco/issues"
   },
-  "homepage": "https://github.com/East-West/Chocco#readme"
+  "homepage": "https://github.com/natella2902/Chocco#readme"
 }

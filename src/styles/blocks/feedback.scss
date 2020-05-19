@@ -1,0 +1,253 @@
+.feedback {
+    color: $colorGrayLight;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url('./pictures/berry6.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 150px;
+        height: 86px;
+        position: absolute;
+        right: 0;
+        top: 5%;
+        z-index: 15;
+
+        
+        @include tablets {
+            width: 180px;
+            height: 120px;
+        
+        }
+    }
+
+    
+    &::after {
+        content: "";
+        background-image: url('./pictures/berry7.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 135px;
+        height: 193px;
+        position: absolute;
+        left: 0;
+        bottom: -10%;
+        z-index: 10;
+
+        
+        @include tablets {
+            width: 180px;
+            height: 220px;
+        }
+    }
+    
+    
+    @include tablets {
+        height: 100%;
+        padding: 0;
+    }
+
+}
+
+.feedback__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback__slider__container {
+    width: 940px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+
+    @include tablets {
+        width: 720px;
+        height: 520px;
+    }
+
+}
+
+.feedback__slider {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f8faf9;
+    //margin-bottom: 30px;
+
+    @include tablets {
+      //margin-bottom: 35px;
+    }
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 90px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        right: 45%;
+        top: -6%;
+
+        @include tablets {
+            top: -6%;
+            right: 42%;
+        }
+
+    }
+}
+
+.feedback__slider__list {
+   white-space: nowrap;
+   font-size: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   will-change: transform;
+   transition: 1s;
+}
+
+.feedback__slider__item {
+    width: 940px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+
+    @include tablets {
+        width: 720px;
+    }
+
+}
+
+.feedback__title {
+    color: $colorBlack;
+}
+
+.feedback__desc {
+    display: flex;
+    width: 100%;
+    //background-color: #f8faf9;
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: "";
+        background-image: url('./pictures/leaf8.png');
+        background-repeat: no-repeat;
+        display: block;
+        width: 127px;
+        height: 180px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+
+        @include tablets {
+          //  width: 119px;
+        }
+    }
+
+}
+
+.feedback__img {
+    width: 254px;
+    height: 260px;
+    margin: 25px;
+
+    @include tablets {
+        width: 131px;
+        height: 133px;
+        margin: 50px 0 30px;
+    }
+}
+
+.feedback__img-pic {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+
+
+.feedback__text {
+    display: flex;
+    flex-direction: column;
+    color: $colorGrayDark;
+    width: 53%;
+    white-space: normal;
+
+    @include tablets {
+       text-align: center;
+       width: 90%;
+    }
+}
+
+.feedback__def {  
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 15px;
+
+    @include tablets {
+        margin: 0 0 20px;
+    }
+}
+
+.feedback__def-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+    @include tablets {
+        margin-bottom: 15px;
+    }
+
+}
+
+.feedback__author {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.feedback__list {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback__item {
+    border: 7px solid transparent;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+
+    @include tablets {
+        margin-right: 25px;
+    }
+   
+    &:last-child {
+        margin-right: 0;
+        
+    }
+
+    &:hover {
+        border: 7px solid $colorGreen;
+    }
+
+
+
+}
+
+
+.feedback__item--active {
+    border: 7px solid $colorGreen;
+}

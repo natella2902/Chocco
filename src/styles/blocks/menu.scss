@@ -1,0 +1,15 @@
+.menu {
+    position: relative;
+    background-size: cover;
+    background-color: $colorBlack;
+    background-image: url('./pictures/menu__img.png');
+    background-repeat:  no-repeat;
+    background-position: center center;
+    display: flex;
+   
+} 
+
+.menu__title {
+    padding-top: 100px;
+    padding-left: 80px;
+}

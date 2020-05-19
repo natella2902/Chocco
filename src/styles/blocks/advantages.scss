@@ -1,0 +1,40 @@
+.advantages__list {
+    width: 50%;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+
+    position: absolute;
+    left: 0;
+    bottom: 3%;
+
+    @include tablets {
+        width: 100%;
+        bottom: 1%;
+    }
+    
+    
+}
+
+.advantages__item {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 45px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+}
+
+.advantages__pic {
+    display: block;
+    width: 50px;
+    height: 50px;
+    stroke: #b0f7ff;
+}
+
+.advantages__desc {
+    width: 60%;
+}
+

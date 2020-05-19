@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,800&display=swap&subset=cyrillic');
+
+
+@import './base/mixins', './base/variables', './base/layout';
+
+@import './blocks/hero', './blocks/video', './blocks/player', './blocks/popup.scss';
+
+// @import './blocks/*.scss';
+
+@import './blocks/nav-rt.scss';
+//@import './blocks/hero.scss';
+@import './blocks/header.scss';
+@import './blocks/nav';
+@import './blocks/hamburger-menu.scss';
+@import './blocks/advantages.scss';
+@import './blocks/btn.scss';
+@import './blocks/about.scss';
+@import './blocks/slider.scss';
+@import './blocks/feedback.scss';
+@import './blocks/team.scss';
+@import './blocks/menu.scss';
+@import './blocks/acco.scss';
+@import './blocks/form.scss';
+@import './blocks/delivery.scss';
+@import './blocks/map.scss';
+@import './blocks/footer.scss';
+@import './blocks/socials.scss';
+
+

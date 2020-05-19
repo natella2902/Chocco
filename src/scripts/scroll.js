@@ -58,7 +58,7 @@ scrollToSection = direction => {
 
 $('.wrapper').on('wheel', e => {
   const deltaY = e.originalEvent.deltaY;
-  console.log('weel event');
+  //console.log('weel event');
 
   //next
   if(deltaY > 0) {

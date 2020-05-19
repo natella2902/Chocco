@@ -1,0 +1,54 @@
+.delivery {
+    background-image: url('./pictures/form_img.png');
+    z-index: -10;
+    background-size: cover;
+    color: $colorGreen;
+    position: relative;
+
+    
+  &::before {
+    content: "";
+    background-image: url('./pictures/leaf12.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 135px;
+    height: 188px;
+    position: absolute;
+    z-index: -5;
+    right: 3%;
+    bottom: 5%;
+
+    
+    @include tablets {
+      width: 150px;
+      height: 250px;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url('./pictures/berry8.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 47px;
+    height: 48px;
+    position: absolute;
+    z-index: -5;
+    left: 0;
+    bottom: 10%;
+
+    
+    @include tablets {
+      width: 60px;
+      height: 60px;
+  }
+  }
+
+
+}
+
+.delivery__container {
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+}   
