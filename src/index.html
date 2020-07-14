@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" href="main.min.css">
 </head>
 <body>
@@ -125,7 +126,7 @@
                     <ul class="about__list">
                         <li class="about__item">
                             <div class="about__icon">
-                                <svg class="about__pic" viewbox="0 0 66 69" height="66" width="69" style ="fill:transparent;"> 
+                                <svg class="about__pic" viewbox="0 0 66 69" height="66" width="69"> 
                                     <use href = "./images/icons/sprite.svg#1"> </use>
                                 </svg>
                             </div>
@@ -136,7 +137,7 @@
                         </li>
                         <li class="about__item">
                             <div class="about__icon">
-                                <svg class="about__pic" viewbox="0 0 70 69" height="70" width="69" style ="fill:transparent;"> 
+                                <svg class="about__pic" viewbox="0 0 70 69" height="70" width="69"> 
                                     <use href = "./images/icons/sprite.svg#3"> </use>
                                 </svg>
                             </div>
@@ -148,7 +149,7 @@
                         </li>
                         <li class="about__item">
                             <div class="about__icon">
-                                <svg class="about__pic" viewbox="0 0 75 64" height="75" width="64" style ="fill:transparent;"> 
+                                <svg class="about__pic" viewbox="0 0 75 64" height="75" width="64"> 
                                     <use href = "./images/icons/sprite.svg#2"> </use>
                                 </svg>
                            
@@ -456,7 +457,8 @@
             <section class="section delivery">
                 <div class="container delivery__container"> 
                     <h2 class="title delivery__title">Закажите доставку</h2>
-                    <form  id="myForm" class="form__tag"> 
+                    <form  id="myForm" class="form form__tag"> 
+                        <input type="hidden" name="to" value="n.jelonkina@mail.ru">
                         <div class="form__part">
                             <div class="form__row">
                                 <label class="form__block">
@@ -529,7 +531,7 @@
                                     <button type="submit" id ="btn" class="btn form__btn">Отправить</button>
                                 </div>  
                                 <div class="form__buttons">
-                                    <button type="reset" class="reset">Очистить</button>
+                                    <button type="reset" class="btn reset">Очистить</button>
                                 </div> 
                             </div>        
                         </div>       
@@ -588,6 +590,16 @@
                 </footer>
             </section>
         </div>  
+    </div>
+    <div class="modal" id='modal'>
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+        </div>
+        <div class="modal__button-container">
+            <a href="#" class="btn app-close-modal">Закрыть</a>
+        </div>
     </div>
     <ul class="nav-rt__list">
         <li class="nav-rt__item active">

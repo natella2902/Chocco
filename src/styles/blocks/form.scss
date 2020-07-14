@@ -77,6 +77,10 @@
 
 .form__radio {
     display: none;
+
+    &-text {
+        margin-left: 7px;
+    }
 }
 
 .form__radio-lbl {
@@ -96,6 +100,7 @@
     border-radius: 50%;
     border: 2px solid $colorGreen;
     position: relative;
+
 }
   
 .form__radio-custom:after {
@@ -131,8 +136,24 @@
 }
 
 .reset {
-    border: none;
     background-color: transparent;
     color: $colorGreen;
+    outline: none;
 }
 
+.form__checkbox {
+    display: flex;
+    align-items: center;
+
+    &-custom {
+        margin-right: 7px;
+    }
+}
+
+.form-field {
+    border: 1px solid transparent;
+}
+
+.form-field.input-error {
+    border: 1px solid yellow;
+}
